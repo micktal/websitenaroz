@@ -81,10 +81,20 @@ export default {
             height: "0",
           },
         },
+        "fade-up": {
+          from: { opacity: 0, transform: 'translateY(12px)' },
+          to: { opacity: 1, transform: 'translateY(0)' },
+        },
+        pop: {
+          from: { transform: 'scale(0.98)', opacity: 0 },
+          to: { transform: 'scale(1)', opacity: 1 },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-up": "fade-up 700ms cubic-bezier(.2,.9,.2,1) both",
+        pop: "pop 360ms cubic-bezier(.2,.9,.2,1) both",
       },
     },
   },
