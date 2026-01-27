@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 
-import { Link } from "react-router-dom";
-
 export default function Index() {
   return (
     <section className="min-h-screen bg-gradient-to-b from-background via-card to-background">
