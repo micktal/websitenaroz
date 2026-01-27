@@ -40,6 +40,11 @@ export default function Courses() {
           <p className="mt-2 text-sm text-muted-foreground">Non-armed awareness course for operating safely in unstable and sensitive environments.</p>
         </a>
 
+        <a href="/courses/protective-medical" className="block p-6 rounded-lg border border-border bg-card transform transition hover:scale-105 hover:shadow-lg animate-fade-up" style={{ animationDelay: '330ms' }}>
+          <h4 className="font-semibold">Protective Medical Support Programme</h4>
+          <p className="mt-2 text-sm text-muted-foreground">FREC Level 3 aligned medical training for protection teams and operational environments.</p>
+        </a>
+
       </div>
     </div>
   );
