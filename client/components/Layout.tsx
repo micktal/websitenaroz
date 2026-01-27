@@ -25,6 +25,9 @@ export default function Layout() {
                 <Link to="/about" className="hover:underline">About</Link>
               </li>
               <li>
+                <Link to="/about-highfield" className="hover:underline">About Highfield</Link>
+              </li>
+              <li>
                 <Link to="/courses" className="hover:underline">Courses</Link>
               </li>
               <li>
