@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 
+import SectionHeader from "@/components/SectionHeader";
+
 export default function AboutHighfield() {
   return (
-    <div className="max-w-4xl">
-      <h1 className="text-3xl font-extrabold">About Highfield Qualifications</h1>
-      <p className="mt-2 text-muted-foreground">An International Awarding Body for Professional Excellence</p>
+    <div className="max-w-4xl card-elevated">
+      <SectionHeader title="About Highfield Qualifications" subtitle="An International Awarding Body for Professional Excellence" />
 
-      <section className="mt-6 space-y-4">
+      <section className="mt-2 space-y-4">
         <p>
           Highfield Qualifications is a UK-based awarding organisation recognised internationally for the development and certification of regulated professional qualifications.
         </p>
