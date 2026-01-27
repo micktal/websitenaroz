@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 import SectionHeader from "@/components/SectionHeader";
 import Illustration from "@/components/Illustration";
 import Separator from "@/components/Separator";
 import Card from "@/components/Card";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 export default function About() {
   return (
