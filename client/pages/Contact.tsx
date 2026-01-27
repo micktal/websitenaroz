@@ -1,7 +1,19 @@
 import { useState } from "react";
 
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+
 export default function Contact() {
+  const location = useLocation();
   const [form, setForm] = useState({ name: "", email: "", course: "Close Protection", date: "", message: "" });
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const course = params.get("course");
+    if (course) {
+      setForm((f) => ({ ...f, course }));
+    }
+  }, [location.search]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -10,7 +22,7 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // For now, just show a confirmation. Integration with backend can be added later.
-    alert(`Thanks ${form.name || 'candidate'} — we received your booking request. We'll contact you at ${form.email || 'your email'}.`);
+    alert(`Thanks ${form.name || 'candidate'} — we received your booking request for ${form.course}. We'll contact you at ${form.email || 'your email'}.`);
     setForm({ name: "", email: "", course: "Close Protection", date: "", message: "" });
   };
 
