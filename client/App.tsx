@@ -13,6 +13,7 @@ import Courses from "./pages/Courses";
 import SIA from "./pages/SIA";
 import Calendar from "./pages/Calendar";
 import Contact from "./pages/Contact";
+import CPOLevel3 from "./pages/CPOLevel3";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
