@@ -1,7 +1,5 @@
 import AppLink from "@/components/AppLink";
 
-import AppLink from "@/components/AppLink";
-
 export default function Index() {
   return (
     <section className="min-h-screen relative overflow-hidden bg-[hsl(var(--navy-deep))] text-[hsl(var(--fg))]">
@@ -45,9 +43,9 @@ export default function Index() {
             </div>
 
             <div className="flex flex-wrap gap-4 mt-4">
-              <Link to="/courses" className="inline-flex items-center px-6 py-3 rounded-md bg-[hsl(var(--accent))] text-[hsl(var(--accent-foreground))] font-semibold shadow-[0_10px_40px_rgba(62,232,166,0.12)]">Explore our programmes</Link>
-              <Link to="/calendar" className="inline-flex items-center px-5 py-3 rounded-md border border-[rgba(255,255,255,0.06)] text-sm text-[hsl(var(--fg))]">Upcoming dates</Link>
-              <Link to="/contact" className="inline-flex items-center px-5 py-3 rounded-md text-sm text-[rgba(248,250,252,0.85)] underline">Contact / Book</Link>
+              <AppLink to="/courses" className="inline-flex items-center px-6 py-3 rounded-md bg-[hsl(var(--accent))] text-[hsl(var(--accent-foreground))] font-semibold shadow-[0_10px_40px_rgba(62,232,166,0.12)]">Explore our programmes</AppLink>
+              <AppLink to="/calendar" className="inline-flex items-center px-5 py-3 rounded-md border border-[rgba(255,255,255,0.06)] text-sm text-[hsl(var(--fg))]">Upcoming dates</AppLink>
+              <AppLink to="/contact" className="inline-flex items-center px-5 py-3 rounded-md text-sm text-[rgba(248,250,252,0.85)] underline">Contact / Book</AppLink>
             </div>
 
             <div className="mt-8 text-sm text-[rgba(248,250,252,0.65)] max-w-2xl">
@@ -80,49 +78,12 @@ export default function Index() {
                   <div className="text-sm font-semibold">Tactical</div>
                   <div className="text-xs text-[rgba(248,250,252,0.6)] mt-2">Driving, firearms & scenario work</div>
                 </div>
-                <div className="p-3 bg-[rgba(255,255,255,0.02)] rounded border border-[rgba(255,255,255,0.03)]">
-                  <div className="text-sm font-semibold">Intelligence</div>
-                  <div className="text-xs text-[rgba(248,250,252,0.6)] mt-2">Surveillance & protective intelligence</div>
-                </div>
-                <div className="p-3 bg-[rgba(255,255,255,0.02)] rounded border border-[rgba(255,255,255,0.03)]">
-                  <div className="text-sm font-semibold">Medical</div>
-                  <div className="text-xs text-[rgba(248,250,252,0.6)] mt-2">Protective first aid & operational care</div>
-                </div>
               </div>
 
             </div>
 
             <div className="absolute -right-8 -bottom-8 w-40 h-40 rounded-full bg-[hsl(var(--accent))/0.18] opacity-90 blur-3xl pointer-events-none" />
           </aside>
-        </div>
-      </div>
-
-      {/* WHO WE PROTECT grid */}
-      <div className="container py-12 relative z-10">
-        <h2 className="text-center text-sm font-medium text-[rgba(248,250,252,0.6)]">WHO WE PROTECT</h2>
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            { title: 'Technology & SaaS', img: 'https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2Ff727b85568f64d93b8d31d993f44e9ac?format=webp&width=800&height=1200' },
-            { title: 'Finance & Fintech', img: 'https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2F3fc26777b70e4140b74bc2348f6f53a2?format=webp&width=800&height=1200' },
-            { title: 'Healthcare & Biotech', img: '' },
-            { title: 'E-commerce & Retail', img: '' },
-            { title: 'Energy & Manufacturing', img: '' },
-            { title: 'Telecommunications', img: '' },
-          ].map((c) => (
-            <div key={c.title} className="group relative rounded-lg overflow-hidden border border-[rgba(255,255,255,0.04)] hover:shadow-[0_10px_40px_rgba(62,232,166,0.06)] transition">
-              <div className="h-40 bg-[rgba(0,0,0,0.35)] flex items-center justify-center">
-                {c.img ? (
-                  <img src={c.img} alt={c.title} className="w-full h-full object-cover grayscale contrast-[0.85] group-hover:contrast-100" />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center text-[rgba(248,250,252,0.3)]">{c.title}</div>
-                )}
-              </div>
-              <div className="p-3 text-center bg-[rgba(255,255,255,0.02)]">
-                <div className="text-sm text-[rgba(248,250,252,0.95)]">{c.title}</div>
-              </div>
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-[hsl(var(--accent))]/60 pointer-events-none rounded-lg" />
-            </div>
-          ))}
         </div>
       </div>
 
