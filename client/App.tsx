@@ -49,8 +49,14 @@ const container = document.getElementById("root");
 // Avoid creating multiple roots during HMR: reuse existing root if present on window
 if (container) {
   const w = window as any;
-  if (!w.__react_root) {
-    w.__react_root = createRoot(container);
+  // If a root exists from a previous HMR run, unmount it first to avoid duplicate-create warnings.
+  if (w.__react_root) {
+    try {
+      w.__react_root.unmount();
+    } catch (e) {
+      // ignore
+    }
   }
+  w.__react_root = createRoot(container);
   w.__react_root.render(<App />);
 }
