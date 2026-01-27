@@ -1,7 +1,5 @@
 import { Outlet } from "react-router-dom";
 import AppLink from "@/components/AppLink";
-import { Outlet } from "react-router-dom";
-import AppLink from "@/components/AppLink";
 import useScroll from "@/hooks/useScroll";
 
 export default function Layout() {
@@ -22,28 +20,28 @@ export default function Layout() {
           <nav>
             <ul className="flex items-center gap-6 text-sm tracking-wide uppercase">
               <li>
-                <Link to="/" className="hover:text-[hsl(var(--accent))]">Home</Link>
+                <AppLink to="/" className="hover:text-[hsl(var(--accent))]">Home</AppLink>
               </li>
               <li>
-                <Link to="/about" className="hover:text-[hsl(var(--accent))]">About</Link>
+                <AppLink to="/about" className="hover:text-[hsl(var(--accent))]">About</AppLink>
               </li>
               <li>
-                <Link to="/about-highfield" className="hover:text-[hsl(var(--accent))]">Highfield</Link>
+                <AppLink to="/about-highfield" className="hover:text-[hsl(var(--accent))]">Highfield</AppLink>
               </li>
               <li>
-                <Link to="/courses" className="hover:text-[hsl(var(--accent))]">Courses</Link>
+                <AppLink to="/courses" className="hover:text-[hsl(var(--accent))]">Courses</AppLink>
               </li>
               <li>
-                <Link to="/sia" className="hover:text-[hsl(var(--accent))]">SIA</Link>
+                <AppLink to="/sia" className="hover:text-[hsl(var(--accent))]">SIA</AppLink>
               </li>
               <li>
-                <Link to="/calendar" className="hover:text-[hsl(var(--accent))]">Calendar</Link>
+                <AppLink to="/calendar" className="hover:text-[hsl(var(--accent))]">Calendar</AppLink>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-[hsl(var(--accent))]">Contact</Link>
+                <AppLink to="/contact" className="hover:text-[hsl(var(--accent))]">Contact</AppLink>
               </li>
               <li>
-                <Link to="/contact" className="ml-2 inline-flex items-center px-3 py-2 rounded bg-[hsl(var(--accent))] text-[hsl(var(--navy-deep))] font-semibold">Book</Link>
+                <AppLink to="/contact" className="ml-2 inline-flex items-center px-3 py-2 rounded bg-[hsl(var(--accent))] text-[hsl(var(--navy-deep))] font-semibold">Book</AppLink>
               </li>
             </ul>
           </nav>
