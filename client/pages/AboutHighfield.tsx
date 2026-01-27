@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 import SectionHeader from "@/components/SectionHeader";
 
