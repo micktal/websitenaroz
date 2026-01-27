@@ -12,7 +12,7 @@ export default function CounterTerrorism() {
 
       <section className="space-y-6">
         <div className="rounded-lg overflow-hidden shadow-lg">
-          <img src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2Fae38441ae9b64ce59168bdf6a109c117?format=webp&width=1200&height=800" alt="Controlled firearms training" className="w-full h-64 md:h-96 object-cover" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2Fae38441ae9b64ce59168bdf6a109c117?format=webp&width=1200&height=800" alt="Controlled firearms training" className="w-full h-64 md:h-96 object-cover" />
         </div>
 
         <div>
