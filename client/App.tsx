@@ -16,6 +16,7 @@ import Contact from "./pages/Contact";
 import CPOLevel3 from "./pages/CPOLevel3";
 import DiplomaticProtection from "./pages/DiplomaticProtection";
 import TacticalDriving from "./pages/TacticalDriving";
+import TacticalFirearms from "./pages/TacticalFirearms";
 import CounterTerrorism from "./pages/CounterTerrorism";
 import SurveillanceIntelligence from "./pages/SurveillanceIntelligence";
 import ProtectiveIntelligence from "./pages/ProtectiveIntelligence";
