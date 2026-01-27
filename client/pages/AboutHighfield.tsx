@@ -1,6 +1,7 @@
 import AppLink from "@/components/AppLink";
 
 import SectionHeader from "@/components/SectionHeader";
+import AppLink from "@/components/AppLink";
 
 export default function AboutHighfield() {
   return (
