@@ -17,6 +17,7 @@ import CPOLevel3 from "./pages/CPOLevel3";
 import DiplomaticProtection from "./pages/DiplomaticProtection";
 import TacticalDriving from "./pages/TacticalDriving";
 import CounterTerrorism from "./pages/CounterTerrorism";
+import SurveillanceIntelligence from "./pages/SurveillanceIntelligence";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
