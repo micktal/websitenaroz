@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
-
 import React from "react";
-import { Link } from "react-router-dom";
+import AppLink from "@/components/AppLink";
 
 type Session = {
   Course: string;
@@ -91,7 +89,7 @@ export default function Calendar() {
 
             return (
               <div key={idx} className="relative">
-                <Link to={to} className="block p-4 rounded-lg border border-border bg-card hover:shadow-lg transition-transform transform hover:-translate-y-1">
+                <AppLink to={to} className="block p-4 rounded-lg border border-border bg-card hover:shadow-lg transition-transform transform hover:-translate-y-1">
                   {lowSeats && (
                     <span className="absolute right-3 top-3 text-[10px] px-2 py-1 rounded bg-[hsl(var(--accent))/0.12] text-[hsl(var(--accent))] border border-[hsl(var(--accent))]/20">Low seats</span>
                   )}
@@ -104,10 +102,10 @@ export default function Calendar() {
                     <div className="text-xs text-muted-foreground">Seats: {s.Seats || 'N/A'}</div>
                   </div>
                   {s.Notes && <div className="mt-2 text-xs text-muted-foreground">{s.Notes}</div>}
-                </Link>
+                </AppLink>
 
                 <div className="absolute right-4 bottom-4">
-                  <Link to={`/contact?course=${encodeURIComponent(s['Session Title'])}&date=${encodeURIComponent(s['Start Date'])}`} className="inline-flex items-center px-3 py-2 rounded bg-[hsl(var(--accent))] text-[hsl(var(--navy-deep))] text-sm font-semibold">Book</Link>
+                  <AppLink to={`/contact?course=${encodeURIComponent(s['Session Title'])}&date=${encodeURIComponent(s['Start Date'])}`} className="inline-flex items-center px-3 py-2 rounded bg-[hsl(var(--accent))] text-[hsl(var(--navy-deep))] text-sm font-semibold">Book</AppLink>
                 </div>
               </div>
             );
