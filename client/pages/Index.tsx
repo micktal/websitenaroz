@@ -47,7 +47,7 @@ export default function Index() {
             <div className="flex flex-wrap gap-4 mt-4">
               <RouterLink to="/courses" className="inline-flex items-center px-6 py-3 rounded-md bg-[hsl(var(--accent))] text-[hsl(var(--accent-foreground))] font-semibold shadow-[0_10px_40px_rgba(62,232,166,0.12)]">Explore our programmes</RouterLink>
               <RouterLink to="/calendar" className="inline-flex items-center px-5 py-3 rounded-md border border-[rgba(255,255,255,0.06)] text-sm text-[hsl(var(--fg))]">Upcoming dates</RouterLink>
-              <Link to="/contact" className="inline-flex items-center px-5 py-3 rounded-md text-sm text-[rgba(248,250,252,0.85)] underline">Contact / Book</Link>
+              <RouterLink to="/contact" className="inline-flex items-center px-5 py-3 rounded-md text-sm text-[rgba(248,250,252,0.85)] underline">Contact / Book</RouterLink>
             </div>
 
             <div className="mt-8 text-sm text-[rgba(248,250,252,0.65)] max-w-2xl">
