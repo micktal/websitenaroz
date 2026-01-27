@@ -50,6 +50,10 @@ export default function SIA() {
           <li>Verification of identity and background checks</li>
           <li>Compliance with SIA licensing requirements</li>
         </ul>
+
+        <div className="mt-6">
+          <a href="/contact?course=Close%20Protection%20Level%203" className="inline-flex items-center px-4 py-2 rounded-md bg-primary text-primary-foreground font-semibold shadow">Book Close Protection Level 3</a>
+        </div>
       </section>
 
       <section className="mt-8">
