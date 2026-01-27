@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 type Session = {
   Course: string;
