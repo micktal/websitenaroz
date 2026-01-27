@@ -26,22 +26,22 @@ export default function Layout() {
                 <Link to="/about" className="hover:text-[hsl(var(--accent))]">About</Link>
               </li>
               <li>
-                <RouterLink to="/about-highfield" className="hover:text-[hsl(var(--accent))]">Highfield</RouterLink>
+                <Link to="/about-highfield" className="hover:text-[hsl(var(--accent))]">Highfield</Link>
               </li>
               <li>
-                <RouterLink to="/courses" className="hover:text-[hsl(var(--accent))]">Courses</RouterLink>
+                <Link to="/courses" className="hover:text-[hsl(var(--accent))]">Courses</Link>
               </li>
               <li>
-                <RouterLink to="/sia" className="hover:text-[hsl(var(--accent))]">SIA</RouterLink>
+                <Link to="/sia" className="hover:text-[hsl(var(--accent))]">SIA</Link>
               </li>
               <li>
-                <RouterLink to="/calendar" className="hover:text-[hsl(var(--accent))]">Calendar</RouterLink>
+                <Link to="/calendar" className="hover:text-[hsl(var(--accent))]">Calendar</Link>
               </li>
               <li>
                 <Link to="/contact" className="hover:text-[hsl(var(--accent))]">Contact</Link>
               </li>
               <li>
-                <RouterLink to="/contact" className="ml-2 inline-flex items-center px-3 py-2 rounded bg-[hsl(var(--accent))] text-[hsl(var(--navy-deep))] font-semibold">Book</RouterLink>
+                <Link to="/contact" className="ml-2 inline-flex items-center px-3 py-2 rounded bg-[hsl(var(--accent))] text-[hsl(var(--navy-deep))] font-semibold">Book</Link>
               </li>
             </ul>
           </nav>
