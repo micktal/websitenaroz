@@ -7,12 +7,15 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen bg-background text-foreground antialiased">
-      <header className={`sticky top-0 z-40 transition-shadow bg-[hsl(var(--navy-deep))]/85 backdrop-blur-sm ${scrolled ? 'shadow-[0_6px_30px_rgba(0,0,0,0.6)]' : ''}`}>
+      <header className={`sticky top-0 z-40 relative transition-shadow bg-[hsl(var(--navy-deep))]/85 backdrop-blur-sm ${scrolled ? 'shadow-[0_6px_30px_rgba(0,0,0,0.6)]' : ''}`}>
         <div className={`container flex items-center justify-between ${scrolled ? 'py-3' : 'py-5'}`}>
           <div className="flex items-center gap-3">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2F947900be11374c6193cb00d108c35b16?format=webp&width=800&height=1200" alt="Naroz Shield Institute" className="h-10 w-10 rounded-md object-cover ring-1 ring-[rgba(255,255,255,0.04)]" />
+            <div className="relative">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2F947900be11374c6193cb00d108c35b16?format=webp&width=800&height=1200" alt="Naroz Shield Institute" className="h-10 w-10 rounded-sm object-cover ring-1 ring-[rgba(0,0,0,0.3)]" />
+              <span className="absolute -right-2 -bottom-2 w-3 h-3 rounded-full border-2 border-[rgba(255,255,255,0.08)] bg-[hsl(var(--military-olive))]" aria-hidden />
+            </div>
             <div>
-              <h1 className="text-lg font-semibold leading-tight">Naroz Shield Institute</h1>
+              <h1 className="text-lg tracking-wider uppercase leading-tight">Naroz Shield Institute</h1>
               <p className="text-sm text-muted-foreground">Training & Protection Services — International</p>
             </div>
           </div>
@@ -41,7 +44,7 @@ export default function Layout() {
                 <LinkWrapper to="/contact" className="hover:text-[hsl(var(--accent))]">Contact</LinkWrapper>
               </li>
               <li>
-                <LinkWrapper to="/contact" className="ml-2 inline-flex items-center px-3 py-2 rounded bg-[hsl(var(--accent))] text-[hsl(var(--navy-deep))] font-semibold">Book</LinkWrapper>
+                <LinkWrapper to="/contact" className="ml-2 inline-flex items-center px-3 py-2 rounded-sm border border-[rgba(255,255,255,0.06)] bg-[hsl(var(--military-olive))] text-[hsl(var(--navy-deep))] font-medium">BOOK</LinkWrapper>
               </li>
             </ul>
           </nav>
