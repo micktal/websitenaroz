@@ -40,6 +40,7 @@ export default function Contact() {
           <option>Diplomatic Protection Programme</option>
           <option>Counter-Terrorism Protection Programme</option>
           <option>Surveillance &amp; Intelligence Programme</option>
+          <option>Protective Intelligence &amp; Advance Work Programme</option>
           <option>Tactical Driving Programme</option>
           <option>Travel Security</option>
           <option>Risk Management</option>
