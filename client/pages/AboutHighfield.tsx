@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import AppLink from "@/components/AppLink";
 
 import SectionHeader from "@/components/SectionHeader";
 
