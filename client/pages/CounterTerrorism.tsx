@@ -1,3 +1,5 @@
+import SessionInfo from "@/components/SessionInfo";
+
 export default function CounterTerrorism() {
   return (
     <div className="max-w-4xl">
