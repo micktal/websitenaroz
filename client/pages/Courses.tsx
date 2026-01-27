@@ -1,6 +1,6 @@
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
-import { Link as RouterLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Courses() {
   const items = [
