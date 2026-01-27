@@ -1,6 +1,5 @@
-import { Link, useLocation } from "react-router-dom";
-
-import { Link, useLocation } from "react-router-dom";
+import AppLink from "@/components/AppLink";
+import { useLocation } from "react-router-dom";
 
 export default function SessionInfo() {
   const { search } = useLocation();
@@ -24,7 +23,7 @@ export default function SessionInfo() {
         <div className="text-right">
           <div className="text-sm text-muted-foreground">Price</div>
           <div className="font-semibold">{price ? `$${price}` : '—'}</div>
-          <Link to={`/contact?course=${encodeURIComponent(sessionTitle)}&date=${encodeURIComponent(startDate || '')}`} className="mt-3 inline-block px-3 py-2 rounded-md bg-primary text-primary-foreground text-sm">Book this session</Link>
+          <AppLink to={`/contact?course=${encodeURIComponent(sessionTitle)}&date=${encodeURIComponent(startDate || '')}`} className="mt-3 inline-block px-3 py-2 rounded-md bg-primary text-primary-foreground text-sm">Book this session</AppLink>
         </div>
       </div>
     </div>
