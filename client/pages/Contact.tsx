@@ -42,8 +42,6 @@ export default function Contact() {
           <option>Surveillance &amp; Intelligence Programme</option>
           <option>Protective Intelligence &amp; Advance Work Programme</option>
           <option>Tactical Driving Programme</option>
-          <option>Travel Security</option>
-          <option>Risk Management</option>
         </select>
         <input name="date" value={form.date} onChange={handleChange} placeholder="Preferred date" type="date" className="w-full rounded-md border border-border px-4 py-2 bg-card" />
         <textarea name="message" value={form.message} onChange={handleChange} placeholder="Message (optional)" className="w-full rounded-md border border-border px-4 py-2 bg-card" rows={4} />
