@@ -11,7 +11,7 @@ export default function Layout() {
       <header className={`sticky top-0 z-40 transition-shadow bg-white/60 backdrop-blur-sm ${scrolled ? 'shadow-md' : ''}`}>
         <div className={`container flex items-center justify-between ${scrolled ? 'py-4' : 'py-6'}`}>
           <div className="flex items-center gap-3">
-            <img src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2F947900be11374c6193cb00d108c35b16?format=webp&width=800&height=1200" alt="Naroz Shield Institute" className="h-10 w-10 rounded-md object-cover" />
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2F947900be11374c6193cb00d108c35b16?format=webp&width=800&height=1200" alt="Naroz Shield Institute" className="h-10 w-10 rounded-md object-cover" />
             <div>
               <h1 className="text-lg font-semibold leading-tight">Naroz Shield Institute</h1>
               <p className="text-sm text-muted-foreground">Training & Protection Services — International</p>
