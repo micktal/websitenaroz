@@ -95,7 +95,7 @@ export default function Calendar() {
                   )}
 
                   <div className="text-xs text-muted-foreground">{s['Start Date']} — {s['End Date']}</div>
-                  <div className="font-semibold mt-1">{s['Session Title']}</div>
+                  <h3 className="text-lg mt-1">{s['Session Title']}</h3>
                   <div className="text-sm text-muted-foreground mt-2">{s.Course} • {s.Location}</div>
                   <div className="mt-3 flex items-center justify-between">
                     <div className="text-sm font-medium">{s['Price (USD)'] ? `$${s['Price (USD)']}` : '—'}</div>
