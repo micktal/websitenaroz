@@ -1,4 +1,4 @@
-import AppLink from "@/components/AppLink";
+import LinkWrapper from "@/components/LinkWrapper";
 
 export default function Index() {
   return (
@@ -43,9 +43,9 @@ export default function Index() {
             </div>
 
             <div className="flex flex-wrap gap-4 mt-4">
-              <AppLink to="/courses" className="inline-flex items-center px-6 py-3 rounded-md bg-[hsl(var(--accent))] text-[hsl(var(--accent-foreground))] font-semibold shadow-[0_10px_40px_rgba(62,232,166,0.12)]">Explore our programmes</AppLink>
-              <AppLink to="/calendar" className="inline-flex items-center px-5 py-3 rounded-md border border-[rgba(255,255,255,0.06)] text-sm text-[hsl(var(--fg))]">Upcoming dates</AppLink>
-              <AppLink to="/contact" className="inline-flex items-center px-5 py-3 rounded-md text-sm text-[rgba(248,250,252,0.85)] underline">Contact / Book</AppLink>
+              <LinkWrapper to="/courses" className="inline-flex items-center px-6 py-3 rounded-md bg-[hsl(var(--accent))] text-[hsl(var(--accent-foreground))] font-semibold shadow-[0_10px_40px_rgba(62,232,166,0.12)]">Explore our programmes</LinkWrapper>
+              <LinkWrapper to="/calendar" className="inline-flex items-center px-5 py-3 rounded-md border border-[rgba(255,255,255,0.06)] text-sm text-[hsl(var(--fg))]">Upcoming dates</LinkWrapper>
+              <LinkWrapper to="/contact" className="inline-flex items-center px-5 py-3 rounded-md text-sm text-[rgba(248,250,252,0.85)] underline">Contact / Book</LinkWrapper>
             </div>
 
             <div className="mt-8 text-sm text-[rgba(248,250,252,0.65)] max-w-2xl">
