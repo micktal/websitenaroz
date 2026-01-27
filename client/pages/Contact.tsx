@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import React from "react";
 import { useLocation } from "react-router-dom";
+import { toast } from "@/hooks/use-toast";
 
 export default function Contact() {
   const location = useLocation();
@@ -21,8 +22,8 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // For now, just show a confirmation. Integration with backend can be added later.
-    alert(`Thanks ${form.name || 'candidate'} — we received your booking request for ${form.course}. We'll contact you at ${form.email || 'your email'}.`);
+    // Use app toast for confirmation. Backend integration can be added later.
+    toast({ title: "Request received", description: `Thanks ${form.name || 'candidate'} — we received your booking request for ${form.course}. We'll contact you at ${form.email || 'your email'}.` });
     setForm({ name: "", email: "", course: "Close Protection", date: "", message: "" });
   };
 
