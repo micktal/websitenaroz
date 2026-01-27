@@ -10,6 +10,10 @@ export default function TacticalDriving() {
         </div>
       </header>
 
+      <div>
+        <SessionInfo />
+      </div>
+
       <section className="space-y-6">
         <div>
           <h2 className="text-xl font-semibold">Programme Overview</h2>
