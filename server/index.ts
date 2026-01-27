@@ -19,5 +19,10 @@ export function createServer() {
 
   app.get("/api/demo", handleDemo);
 
+  // PayPal (mock) routes
+  const { handleCreateOrder, handleCaptureOrder } = require("./routes/paypal");
+  app.post("/api/paypal/create-order", handleCreateOrder);
+  app.post("/api/paypal/capture-order", handleCaptureOrder);
+
   return app;
 }
