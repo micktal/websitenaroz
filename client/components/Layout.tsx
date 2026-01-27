@@ -20,7 +20,7 @@ export default function Layout() {
           <nav>
             <ul className="flex items-center gap-6 text-sm tracking-wide uppercase">
               <li>
-                <RouterLink to="/" className="hover:text-[hsl(var(--accent))]">Home</RouterLink>
+                <Link to="/" className="hover:text-[hsl(var(--accent))]">Home</Link>
               </li>
               <li>
                 <RouterLink to="/about" className="hover:text-[hsl(var(--accent))]">About</RouterLink>
