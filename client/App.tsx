@@ -45,4 +45,12 @@ const App = () => (
   </QueryClientProvider>
 );
 
-createRoot(document.getElementById("root")!).render(<App />);
+const container = document.getElementById("root");
+// Avoid creating multiple roots during HMR: reuse existing root if present on window
+if (container) {
+  const w = window as any;
+  if (!w.__react_root) {
+    w.__react_root = createRoot(container);
+  }
+  w.__react_root.render(<App />);
+}
