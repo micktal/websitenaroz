@@ -23,7 +23,7 @@ export default function Layout() {
                 <Link to="/" className="hover:text-[hsl(var(--accent))]">Home</Link>
               </li>
               <li>
-                <RouterLink to="/about" className="hover:text-[hsl(var(--accent))]">About</RouterLink>
+                <Link to="/about" className="hover:text-[hsl(var(--accent))]">About</Link>
               </li>
               <li>
                 <RouterLink to="/about-highfield" className="hover:text-[hsl(var(--accent))]">Highfield</RouterLink>
