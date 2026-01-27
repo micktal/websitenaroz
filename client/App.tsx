@@ -20,6 +20,7 @@ import CounterTerrorism from "./pages/CounterTerrorism";
 import SurveillanceIntelligence from "./pages/SurveillanceIntelligence";
 import ProtectiveIntelligence from "./pages/ProtectiveIntelligence";
 import HEAT from "./pages/HEAT";
+import ProtectiveMedical from "./pages/ProtectiveMedical";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
