@@ -2,7 +2,7 @@ import SectionHeader from "@/components/SectionHeader";
 import Illustration from "@/components/Illustration";
 import Separator from "@/components/Separator";
 import Card from "@/components/Card";
-import AppLink from "@/components/AppLink";
+import LinkWrapper from "@/components/LinkWrapper";
 
 export default function About() {
   return (
@@ -66,7 +66,7 @@ export default function About() {
             <p className="mt-4">Training does not end with certification. Our objective is to contribute to the development of responsible professionals, capable of adapting, thinking critically and operating with judgement in uncertain environments.</p>
 
             <div className="mt-6">
-              <AppLink to="/contact" className="inline-flex items-center px-4 py-2 rounded-md bg-primary text-primary-foreground font-semibold">Contact us</AppLink>
+              <LinkWrapper to="/contact" className="inline-flex items-center px-4 py-2 rounded-md bg-primary text-primary-foreground font-semibold">Contact us</LinkWrapper>
             </div>
           </Card>
         </div>
