@@ -15,6 +15,11 @@ export default function Courses() {
           <p className="mt-2 text-sm text-muted-foreground">7-day intensive programme focused on protecting diplomats and international officials.</p>
         </a>
 
+        <a href="/courses/counter-terrorism" className="block p-6 rounded-lg border border-border bg-card transform transition hover:scale-105 hover:shadow-lg text-red-700 animate-fade-up" style={{ animationDelay: '260ms' }}>
+          <h4 className="font-semibold">Counter-Terrorism Protection Programme</h4>
+          <p className="mt-2 text-sm text-muted-foreground">5-day intensive course with a strong firearms and protective response focus (regulated environments).</p>
+        </a>
+
         <a href="/courses/tactical-driving" className="block p-6 rounded-lg border border-border bg-card transform transition hover:scale-105 hover:shadow-lg animate-fade-up" style={{ animationDelay: '280ms' }}>
           <h4 className="font-semibold">Tactical Driving Programme</h4>
           <p className="mt-2 text-sm text-muted-foreground">3-day intensive course for defensive and protective driving.</p>
