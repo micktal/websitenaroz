@@ -11,6 +11,10 @@ export default function CounterTerrorism() {
       </header>
 
       <section className="space-y-6">
+        <div className="rounded-lg overflow-hidden shadow-lg">
+          <img src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2Fae38441ae9b64ce59168bdf6a109c117?format=webp&width=1200&height=800" alt="Controlled firearms training" className="w-full h-64 md:h-96 object-cover" />
+        </div>
+
         <div>
           <h2 className="text-xl font-semibold">Programme Overview</h2>
           <p className="mt-2 text-muted-foreground">The Counter-Terrorism Protection Programme is an intensive professional course designed to prepare security personnel to operate safely and responsibly in environments exposed to terrorist threats.</p>
