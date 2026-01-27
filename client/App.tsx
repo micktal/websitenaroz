@@ -19,6 +19,7 @@ import TacticalDriving from "./pages/TacticalDriving";
 import CounterTerrorism from "./pages/CounterTerrorism";
 import SurveillanceIntelligence from "./pages/SurveillanceIntelligence";
 import ProtectiveIntelligence from "./pages/ProtectiveIntelligence";
+import HEAT from "./pages/HEAT";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
