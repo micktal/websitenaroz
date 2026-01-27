@@ -79,7 +79,7 @@ export default function Contact() {
               <Illustration name="fingerprint" className="w-full h-auto" />
             </div>
             <div className="mt-4 text-center">
-              <div className="text-sm font-semibold">Need help choosing?</div>
+              <h4 className="text-sm">Need help choosing?</h4>
               <div className="text-xs text-muted-foreground mt-1">If you're unsure which programme fits your goals, tell us briefly and our team will advise.</div>
             </div>
 
