@@ -1,6 +1,6 @@
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
-import { Link } from "react-router-dom";
+import AppLink from "@/components/AppLink";
 
 export default function Courses() {
   const items = [
@@ -22,12 +22,12 @@ export default function Courses() {
 
       <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((it) => (
-          <Link key={it.href} to={it.href} className="block">
+          <AppLink key={it.href} to={it.href} className="block">
             <Card className="p-6">
               <div className="font-semibold">{it.title}</div>
               <div className="text-sm text-muted-foreground mt-2">{it.subtitle}</div>
             </Card>
-          </Link>
+          </AppLink>
         ))}
       </div>
     </div>
