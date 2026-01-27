@@ -92,7 +92,7 @@ export default function Contact() {
             </div>
 
             <div className="mt-6">
-              <h5 className="text-sm font-semibold">Office Hours</h5>
+              <h4 className="text-sm">Office Hours</h4>
               <div className="text-sm text-muted-foreground">Mon–Fri 09:00–18:00 (GMT)</div>
             </div>
 
