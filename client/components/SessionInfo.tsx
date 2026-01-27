@@ -18,7 +18,7 @@ export default function SessionInfo() {
       <div className="flex items-start justify-between">
         <div>
           <div className="text-sm text-muted-foreground">Selected session</div>
-          <div className="font-semibold text-lg">{sessionTitle}</div>
+          <h3 className="text-lg">{sessionTitle}</h3>
           <div className="mt-1 text-sm text-muted-foreground">{startDate}{endDate ? ` — ${endDate}` : ''} • {location}</div>
         </div>
         <div className="text-right">
