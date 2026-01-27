@@ -45,6 +45,11 @@ export default function Courses() {
           <p className="mt-2 text-sm text-muted-foreground">FREC Level 3 aligned medical training for protection teams and operational environments.</p>
         </a>
 
+        <a href="/courses/protective-operations" className="block p-6 rounded-lg border border-border bg-card transform transition hover:scale-105 hover:shadow-lg animate-fade-up" style={{ animationDelay: '340ms' }}>
+          <h4 className="font-semibold">Protective Operations Management</h4>
+          <p className="mt-2 text-sm text-muted-foreground">Team Leader & Supervisor programme focused on leadership, command and operational management.</p>
+        </a>
+
       </div>
     </div>
   );
