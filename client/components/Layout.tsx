@@ -17,7 +17,7 @@ export default function Layout() {
           </div>
 
           <nav>
-            <ul className="flex items-center gap-6 text-sm">
+            <ul className="flex items-center gap-6 text-sm tracking-wide uppercase">
               <li>
                 <Link to="/" className="hover:text-[hsl(var(--accent))]">Home</Link>
               </li>
@@ -25,19 +25,19 @@ export default function Layout() {
                 <Link to="/about" className="hover:text-[hsl(var(--accent))]">About</Link>
               </li>
               <li>
-                <Link to="/about-highfield" className="hover:text-[hsl(var(--accent))]">About Highfield</Link>
+                <Link to="/about-highfield" className="hover:text-[hsl(var(--accent))]">Highfield</Link>
               </li>
               <li>
                 <Link to="/courses" className="hover:text-[hsl(var(--accent))]">Courses</Link>
               </li>
               <li>
-                <Link to="/sia" className="hover:text-[hsl(var(--accent))]">About SIA</Link>
+                <Link to="/sia" className="hover:text-[hsl(var(--accent))]">SIA</Link>
               </li>
               <li>
                 <Link to="/calendar" className="hover:text-[hsl(var(--accent))]">Calendar</Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-[hsl(var(--accent))]">Contact / Book</Link>
+                <Link to="/contact" className="hover:text-[hsl(var(--accent))]">Contact</Link>
               </li>
               <li>
                 <Link to="/contact" className="ml-2 inline-flex items-center px-3 py-2 rounded bg-[hsl(var(--accent))] text-[hsl(var(--navy-deep))] font-semibold">Book</Link>
