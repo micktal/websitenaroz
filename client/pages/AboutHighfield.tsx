@@ -16,7 +16,7 @@ export default function AboutHighfield() {
           Highfield works with approved training centres across the world to ensure that learners receive consistent, high-quality training aligned with industry and regulatory standards.
         </p>
 
-        <h3 className="text-xl font-semibold mt-4">What Is an Awarding Organisation?</h3>
+        <h3 className="text-xl font-semibold mt-4 section-header"><span className="marker" aria-hidden />What Is an Awarding Organisation?</h3>
         <p>
           An awarding organisation is responsible for designing qualification frameworks, defining learning outcomes and assessment criteria, ensuring qualifications meet regulated standards, monitoring training centres through quality assurance and audits, and issuing recognised certificates and diplomas.
         </p>
