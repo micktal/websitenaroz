@@ -32,7 +32,7 @@ export default function Layout() {
                 <RouterLink to="/courses" className="hover:text-[hsl(var(--accent))]">Courses</RouterLink>
               </li>
               <li>
-                <Link to="/sia" className="hover:text-[hsl(var(--accent))]">SIA</Link>
+                <RouterLink to="/sia" className="hover:text-[hsl(var(--accent))]">SIA</RouterLink>
               </li>
               <li>
                 <Link to="/calendar" className="hover:text-[hsl(var(--accent))]">Calendar</Link>
