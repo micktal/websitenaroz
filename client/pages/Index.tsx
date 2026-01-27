@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import { Link } from "react-router-dom";
+
 export default function Index() {
   return (
     <section className="min-h-screen bg-gradient-to-b from-background via-card to-background">
@@ -7,7 +9,7 @@ export default function Index() {
         <div className="grid gap-12 lg:grid-cols-2 items-center">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-4">
-              <div className="h-14 w-14 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg">NS</div>
+              <img src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2F947900be11374c6193cb00d108c35b16?format=webp&width=800&height=1200" alt="Naroz Shield Institute" className="h-14 w-14 rounded-md object-cover" />
               <div>
                 <div className="text-sm text-muted-foreground">Naroz Shield Institute</div>
                 <div className="text-xs text-muted-foreground">Professional Training for High-Risk Environments</div>
