@@ -36,6 +36,9 @@ export default function Contact() {
         <input name="email" value={form.email} onChange={handleChange} placeholder="Email address" type="email" className="w-full rounded-md border border-border px-4 py-2 bg-card" />
         <select name="course" value={form.course} onChange={handleChange} className="w-full rounded-md border border-border px-4 py-2 bg-card">
           <option>Close Protection</option>
+          <option>Close Protection Level 3</option>
+          <option>Diplomatic Protection Programme</option>
+          <option>Tactical Driving Programme</option>
           <option>Travel Security</option>
           <option>Risk Management</option>
         </select>
