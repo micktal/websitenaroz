@@ -38,6 +38,7 @@ export default function Contact() {
           <option>Close Protection</option>
           <option>Close Protection Level 3</option>
           <option>Diplomatic Protection Programme</option>
+          <option>Counter-Terrorism Protection Programme</option>
           <option>Tactical Driving Programme</option>
           <option>Travel Security</option>
           <option>Risk Management</option>
