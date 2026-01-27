@@ -159,6 +159,21 @@
   h2 { font-weight: 700; }
   h3 { font-weight: 600; }
 
+  /* Ensure regular body text is not bold: only headings remain bold */
+  :where(p, li, small, a, span, div, button, label) {
+    font-weight: 400;
+  }
+
+  /* Override Tailwind's .font-semibold on non-heading elements to keep them normal weight */
+  .font-semibold:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    font-weight: 400 !important;
+  }
+
+  /* Make semantic <strong>/<b> normal too, since we only want headings bold */
+  strong, b {
+    font-weight: 400;
+  }
+
   .section-header {
     display: inline-flex;
     align-items: center;
