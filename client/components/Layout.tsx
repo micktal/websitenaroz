@@ -41,7 +41,7 @@ export default function Layout() {
                 <Link to="/contact" className="hover:text-[hsl(var(--accent))]">Contact</Link>
               </li>
               <li>
-                <Link to="/contact" className="ml-2 inline-flex items-center px-3 py-2 rounded bg-[hsl(var(--accent))] text-[hsl(var(--navy-deep))] font-semibold">Book</Link>
+                <RouterLink to="/contact" className="ml-2 inline-flex items-center px-3 py-2 rounded bg-[hsl(var(--accent))] text-[hsl(var(--navy-deep))] font-semibold">Book</RouterLink>
               </li>
             </ul>
           </nav>
