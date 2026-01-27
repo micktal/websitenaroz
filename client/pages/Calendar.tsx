@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 type Session = {
   Course: string;
   "Session Title": string;
@@ -44,6 +47,22 @@ export default function Calendar() {
     };
   }, []);
 
+  const mapCourse = (course: string) => {
+    const map: Record<string,string> = {
+      'Close Protection Level 3': '/courses/cpo-level-3',
+      'Diplomatic Protection Programme': '/courses/diplomatic-protection',
+      'Tactical Driving Programme': '/courses/tactical-driving',
+      'Counter-Terrorism Protection Programme': '/courses/counter-terrorism',
+      'Surveillance & Intelligence Programme': '/courses/surveillance-intelligence',
+      'Protective Intelligence & Advance Work': '/courses/protective-intelligence',
+      'Hostile Environment Awareness Training (HEAT)': '/courses/heat',
+      'Protective Medical Support Programme': '/courses/protective-medical',
+      'Protective Operations Management': '/courses/protective-operations',
+      'Tactical Firearms Programme': '/courses/tactical-firearms',
+    };
+    return map[course] || '/courses';
+  };
+
   return (
     <div>
       <h2 className="text-3xl font-bold">Training Calendar</h2>
@@ -53,23 +72,9 @@ export default function Calendar() {
         {sessions.length === 0 ? (
           <div className="text-sm text-muted-foreground">Loading sessions...</div>
         ) : (
-          sessions.map((s, idx) => (
-            <a
-            key={idx}
-            href={(() => {
-              const map: Record<string,string> = {
-                'Close Protection Level 3': '/courses/cpo-level-3',
-                'Diplomatic Protection Programme': '/courses/diplomatic-protection',
-                'Tactical Driving Programme': '/courses/tactical-driving',
-                'Counter-Terrorism Protection Programme': '/courses/counter-terrorism',
-                'Surveillance & Intelligence Programme': '/courses/surveillance-intelligence',
-                'Protective Intelligence & Advance Work': '/courses/protective-intelligence',
-                'Hostile Environment Awareness Training (HEAT)': '/courses/heat',
-                'Protective Medical Support Programme': '/courses/protective-medical',
-                'Protective Operations Management': '/courses/protective-operations',
-                'Tactical Firearms Programme': '/courses/tactical-firearms',
-              };
-              const base = map[s.Course] || '/courses';
+          sessions.map((s, idx) => {
+            const to = (() => {
+              const base = mapCourse(s.Course);
               const q = new URLSearchParams();
               q.set('sessionTitle', s['Session Title']);
               q.set('startDate', s['Start Date']);
@@ -77,19 +82,36 @@ export default function Calendar() {
               q.set('location', s['Location']);
               if (s['Price (USD)']) q.set('price', s['Price (USD)']);
               return `${base}?${q.toString()}`;
-            })()}
-            className="block p-4 rounded-lg border border-border bg-card hover:shadow-lg transition-transform transform hover:-translate-y-1"
-          >
-            <div className="text-xs text-muted-foreground">{s['Start Date']} — {s['End Date']}</div>
-            <div className="font-semibold mt-1">{s['Session Title']}</div>
-            <div className="text-sm text-muted-foreground mt-2">{s.Course} • {s.Location}</div>
-            <div className="mt-3 flex items-center justify-between">
-              <div className="text-sm font-medium">{s['Price (USD)'] ? `$${s['Price (USD)']}` : '—'}</div>
-              <div className="text-xs text-muted-foreground">Seats: {s.Seats || 'N/A'}</div>
-            </div>
-            {s.Notes && <div className="mt-2 text-xs text-muted-foreground">{s.Notes}</div>}
-          </a>
-          ))
+            })();
+
+            const lowSeats = (() => {
+              const n = parseInt(s.Seats || '0', 10);
+              return !isNaN(n) && n > 0 && n <= 5;
+            })();
+
+            return (
+              <div key={idx} className="relative">
+                <Link to={to} className="block p-4 rounded-lg border border-border bg-card hover:shadow-lg transition-transform transform hover:-translate-y-1">
+                  {lowSeats && (
+                    <span className="absolute right-3 top-3 text-[10px] px-2 py-1 rounded bg-[hsl(var(--accent))/0.12] text-[hsl(var(--accent))] border border-[hsl(var(--accent))]/20">Low seats</span>
+                  )}
+
+                  <div className="text-xs text-muted-foreground">{s['Start Date']} — {s['End Date']}</div>
+                  <div className="font-semibold mt-1">{s['Session Title']}</div>
+                  <div className="text-sm text-muted-foreground mt-2">{s.Course} • {s.Location}</div>
+                  <div className="mt-3 flex items-center justify-between">
+                    <div className="text-sm font-medium">{s['Price (USD)'] ? `$${s['Price (USD)']}` : '—'}</div>
+                    <div className="text-xs text-muted-foreground">Seats: {s.Seats || 'N/A'}</div>
+                  </div>
+                  {s.Notes && <div className="mt-2 text-xs text-muted-foreground">{s.Notes}</div>}
+                </Link>
+
+                <div className="absolute right-4 bottom-4">
+                  <Link to={`/contact?course=${encodeURIComponent(s['Session Title'])}&date=${encodeURIComponent(s['Start Date'])}`} className="inline-flex items-center px-3 py-2 rounded bg-[hsl(var(--accent))] text-[hsl(var(--navy-deep))] text-sm font-semibold">Book</Link>
+                </div>
+              </div>
+            );
+          })
         )}
       </div>
     </div>
