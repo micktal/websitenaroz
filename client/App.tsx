@@ -14,6 +14,8 @@ import SIA from "./pages/SIA";
 import Calendar from "./pages/Calendar";
 import Contact from "./pages/Contact";
 import CPOLevel3 from "./pages/CPOLevel3";
+import DiplomaticProtection from "./pages/DiplomaticProtection";
+import TacticalDriving from "./pages/TacticalDriving";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
