@@ -22,6 +22,7 @@ import ProtectiveIntelligence from "./pages/ProtectiveIntelligence";
 import HEAT from "./pages/HEAT";
 import ProtectiveMedical from "./pages/ProtectiveMedical";
 import ProtectiveOperations from "./pages/ProtectiveOperations";
+import Pay from "./pages/Pay";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
