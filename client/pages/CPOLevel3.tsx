@@ -10,6 +10,11 @@ export default function CPOLevel3() {
         </div>
       </header>
 
+      {/* Session details if navigated from calendar */}
+      <div>
+        <SessionInfo />
+      </div>
+
       <section className="space-y-6">
         <div>
           <h2 className="text-xl font-semibold">Programme Overview</h2>
