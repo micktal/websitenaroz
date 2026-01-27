@@ -16,9 +16,9 @@ type Session = {
 };
 
 export default function Calendar() {
-  const [sessions, setSessions] = useState<Session[]>([]);
+  const [sessions, setSessions] = React.useState<Session[]>([]);
 
-  useEffect(() => {
+  React.useEffect(() => {
     let mounted = true;
     fetch("/data/training-calendar.csv")
       .then((r) => r.text())
