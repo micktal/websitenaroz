@@ -77,7 +77,7 @@ export default function About() {
               <Illustration name="shield" className="w-full h-auto" />
             </div>
             <div className="mt-4 text-center">
-              <div className="text-sm font-semibold">Professional Standards</div>
+              <div className="text-sm">Professional Standards</div>
               <div className="text-xs text-muted-foreground mt-1">Accredited, quality assured training aligned to international frameworks.</div>
             </div>
           </Card>
