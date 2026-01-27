@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import AppLink from "@/components/AppLink";
+import LinkWrapper from "@/components/LinkWrapper";
 import useScroll from "@/hooks/useScroll";
 
 export default function Layout() {
@@ -20,28 +20,28 @@ export default function Layout() {
           <nav>
             <ul className="flex items-center gap-6 text-sm tracking-wide uppercase">
               <li>
-                <AppLink to="/" className="hover:text-[hsl(var(--accent))]">Home</AppLink>
+                <LinkWrapper to="/" className="hover:text-[hsl(var(--accent))]">Home</LinkWrapper>
               </li>
               <li>
-                <AppLink to="/about" className="hover:text-[hsl(var(--accent))]">About</AppLink>
+                <LinkWrapper to="/about" className="hover:text-[hsl(var(--accent))]">About</LinkWrapper>
               </li>
               <li>
-                <AppLink to="/about-highfield" className="hover:text-[hsl(var(--accent))]">Highfield</AppLink>
+                <LinkWrapper to="/about-highfield" className="hover:text-[hsl(var(--accent))]">Highfield</LinkWrapper>
               </li>
               <li>
-                <AppLink to="/courses" className="hover:text-[hsl(var(--accent))]">Courses</AppLink>
+                <LinkWrapper to="/courses" className="hover:text-[hsl(var(--accent))]">Courses</LinkWrapper>
               </li>
               <li>
-                <AppLink to="/sia" className="hover:text-[hsl(var(--accent))]">SIA</AppLink>
+                <LinkWrapper to="/sia" className="hover:text-[hsl(var(--accent))]">SIA</LinkWrapper>
               </li>
               <li>
-                <AppLink to="/calendar" className="hover:text-[hsl(var(--accent))]">Calendar</AppLink>
+                <LinkWrapper to="/calendar" className="hover:text-[hsl(var(--accent))]">Calendar</LinkWrapper>
               </li>
               <li>
-                <AppLink to="/contact" className="hover:text-[hsl(var(--accent))]">Contact</AppLink>
+                <LinkWrapper to="/contact" className="hover:text-[hsl(var(--accent))]">Contact</LinkWrapper>
               </li>
               <li>
-                <AppLink to="/contact" className="ml-2 inline-flex items-center px-3 py-2 rounded bg-[hsl(var(--accent))] text-[hsl(var(--navy-deep))] font-semibold">Book</AppLink>
+                <LinkWrapper to="/contact" className="ml-2 inline-flex items-center px-3 py-2 rounded bg-[hsl(var(--accent))] text-[hsl(var(--navy-deep))] font-semibold">Book</LinkWrapper>
               </li>
             </ul>
           </nav>
