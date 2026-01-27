@@ -71,7 +71,7 @@ export default function Index() {
 
               <div className="mt-6 grid grid-cols-2 gap-4">
                 <div className="p-3 bg-[rgba(255,255,255,0.02)] rounded border border-[rgba(255,255,255,0.03)]">
-                  <div className="text-sm font-semibold">Protection</div>
+                  <div className="text-sm">Protection</div>
                   <div className="text-xs text-[rgba(248,250,252,0.6)] mt-2">Close protection & protective operations</div>
                 </div>
                 <div className="p-3 bg-[rgba(255,255,255,0.02)] rounded border border-[rgba(255,255,255,0.03)]">
