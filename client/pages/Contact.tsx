@@ -97,7 +97,7 @@ export default function Contact() {
             </div>
 
             <div className="mt-6">
-              <h5 className="text-sm font-semibold">Quick Links</h5>
+              <h4 className="text-sm">Quick Links</h4>
               <ul className="mt-2 space-y-2 text-sm">
                 <li><a href="/courses" className="text-[hsl(var(--accent))] hover:underline">Explore programmes</a></li>
                 <li><a href="/calendar" className="text-[hsl(var(--accent))] hover:underline">View calendar</a></li>
