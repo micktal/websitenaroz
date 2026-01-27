@@ -51,6 +51,7 @@ export default function Contact() {
                 <option>Hostile Environment Awareness Training (HEAT)</option>
                 <option>Protective Medical Support Programme</option>
                 <option>Protective Operations Management</option>
+                <option>Tactical Firearms Programme</option>
                 <option>Tactical Driving Programme</option>
               </select>
 
