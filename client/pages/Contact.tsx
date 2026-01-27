@@ -41,6 +41,7 @@ export default function Contact() {
           <option>Counter-Terrorism Protection Programme</option>
           <option>Surveillance &amp; Intelligence Programme</option>
           <option>Protective Intelligence &amp; Advance Work Programme</option>
+          <option>Hostile Environment Awareness Training (HEAT)</option>
           <option>Tactical Driving Programme</option>
         </select>
         <input name="date" value={form.date} onChange={handleChange} placeholder="Preferred date" type="date" className="w-full rounded-md border border-border px-4 py-2 bg-card" />
