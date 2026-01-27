@@ -24,7 +24,7 @@ export default function SessionInfo() {
         <div className="text-right">
           <div className="text-sm text-muted-foreground">Price</div>
           <div className="font-semibold">{price ? `$${price}` : '—'}</div>
-          <Link to={`/contact?course=${encodeURIComponent(sessionTitle)}&date=${encodeURIComponent(startDate || '')}`} className="mt-3 inline-block px-3 py-2 rounded-md bg-primary text-primary-foreground text-sm">Book this session</Link>
+          <RouterLink to={`/contact?course=${encodeURIComponent(sessionTitle)}&date=${encodeURIComponent(startDate || '')}`} className="mt-3 inline-block px-3 py-2 rounded-md bg-primary text-primary-foreground text-sm">Book this session</RouterLink>
         </div>
       </div>
     </div>
