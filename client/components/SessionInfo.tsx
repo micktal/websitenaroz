@@ -23,7 +23,7 @@ export default function SessionInfo() {
         </div>
         <div className="text-right">
           <div className="text-sm text-muted-foreground">Price</div>
-          <div className="font-semibold">{price ? `$${price}` : '—'}</div>
+          <div className="text-lg">{price ? `$${price}` : '—'}</div>
           <LinkWrapper to={`/contact?course=${encodeURIComponent(sessionTitle)}&date=${encodeURIComponent(startDate || '')}`} className="mt-3 inline-block px-3 py-2 rounded-md bg-primary text-primary-foreground text-sm">Book this session</LinkWrapper>
         </div>
       </div>
