@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-import { useEffect, useState } from "react";
+import React from "react";
 import { useLocation } from "react-router-dom";
 
 export default function Contact() {
   const location = useLocation();
-  const [form, setForm] = useState({ name: "", email: "", course: "Close Protection", date: "", message: "" });
+  const [form, setForm] = React.useState({ name: "", email: "", course: "Close Protection", date: "", message: "" });
 
-  useEffect(() => {
+  React.useEffect(() => {
     const params = new URLSearchParams(location.search);
     const course = params.get("course");
     if (course) {
