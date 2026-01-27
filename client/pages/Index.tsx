@@ -33,7 +33,7 @@ export default function Index() {
               </div>
 
               <div className="p-4 rounded-lg border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] hover:shadow-[0_8px_40px_rgba(62,232,166,0.04)] transition transform hover:-translate-y-1">
-                <h4 className="font-semibold">What Makes Us Different</h4>
+                <h4>What Makes Us Different</h4>
                 <ul className="mt-2 text-sm text-[rgba(248,250,252,0.65)] space-y-2">
                   <li>• Realistic professional environments</li>
                   <li>• Instructors with operational experience</li>
