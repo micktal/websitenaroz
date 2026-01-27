@@ -1,7 +1,5 @@
-import AppLink from "@/components/AppLink";
-
+import LinkWrapper from "@/components/LinkWrapper";
 import SectionHeader from "@/components/SectionHeader";
-import AppLink from "@/components/AppLink";
 
 export default function AboutHighfield() {
   return (
@@ -65,7 +63,7 @@ export default function AboutHighfield() {
         </p>
 
         <div className="mt-6">
-          <AppLink to="/contact" className="inline-flex items-center px-4 py-2 rounded-md bg-primary text-primary-foreground font-semibold">Contact us</AppLink>
+          <LinkWrapper to="/contact" className="inline-flex items-center px-4 py-2 rounded-md bg-primary text-primary-foreground font-semibold">Contact us</LinkWrapper>
         </div>
       </section>
     </div>
