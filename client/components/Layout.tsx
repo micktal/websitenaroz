@@ -1,10 +1,14 @@
 import { Link, Outlet } from "react-router-dom";
 
+import useScroll from "@/hooks/useScroll";
+
 export default function Layout() {
+  const scrolled = useScroll(8);
+
   return (
     <div className="min-h-screen bg-background text-foreground antialiased">
-      <header className="border-b border-border bg-white/60 backdrop-blur-sm">
-        <div className="container flex items-center justify-between py-6">
+      <header className={`sticky top-0 z-40 transition-shadow bg-white/60 backdrop-blur-sm ${scrolled ? 'shadow-md' : ''}`}>
+        <div className={`container flex items-center justify-between ${scrolled ? 'py-4' : 'py-6'}`}>
           <div className="flex items-center gap-3">
             <div className="h-10 w-10 rounded-md bg-primary flex items-center justify-center text-primary-foreground font-bold">NS</div>
             <div>
