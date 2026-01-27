@@ -68,10 +68,12 @@
 
   /* Noise overlay and scanline utilities */
   .bg-noise {
-    background-image: url('/assets/noise.png');
-    background-repeat: repeat;
-    opacity: 0.15;
+    /* subtle grain using tiny radial-gradient tiles */
+    background-image: radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 4px 4px;
+    opacity: 0.14;
     mix-blend-mode: overlay;
+    pointer-events: none;
   }
 
   .scanlines {
