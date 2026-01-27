@@ -24,7 +24,7 @@ export default function Courses() {
         {items.map((it) => (
           <LinkWrapper key={it.href} to={it.href} className="block">
             <Card className="p-6">
-              <div className="font-semibold">{it.title}</div>
+              <h3 className="text-lg">{it.title}</h3>
               <div className="text-sm text-muted-foreground mt-2">{it.subtitle}</div>
             </Card>
           </LinkWrapper>
