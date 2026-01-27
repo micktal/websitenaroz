@@ -86,7 +86,7 @@ export default function Contact() {
             <Separator />
 
             <div className="mt-4">
-              <div className="text-sm font-semibold">Contact</div>
+              <h4 className="text-sm">Contact</h4>
               <div className="text-sm text-muted-foreground mt-1">hello@narozshield.example</div>
               <div className="text-sm text-muted-foreground">+44 20 7946 0958</div>
             </div>
