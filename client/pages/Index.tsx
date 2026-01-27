@@ -20,7 +20,7 @@ export default function Index() {
 
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Not Standard — Professional, International Training</h1>
 
-            <p className="text-lg text-[rgba(248,250,252,0.75)] max-w-2xl">We prepare professionals to operate in environments where mistakes are not an option. Our programmes combine realistic scenario-based training, operational planning and accredited qualifications to build confident teams and individuals.</p>
+            <p className="lead">We prepare professionals to operate in environments where mistakes are not an option. Our programmes combine realistic scenario-based training, operational planning and accredited qualifications to build confident teams and individuals.</p>
 
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="p-4 rounded-lg border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] hover:shadow-[0_8px_40px_rgba(62,232,166,0.06)] transition transform hover:-translate-y-1">
