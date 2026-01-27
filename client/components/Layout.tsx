@@ -1,5 +1,5 @@
-import { Link, Outlet } from "react-router-dom";
-import { Link, Outlet } from "react-router-dom";
+import { Link as RouterLink, Outlet } from "react-router-dom";
+import { Link as RouterLink, Outlet } from "react-router-dom";
 import useScroll from "@/hooks/useScroll";
 
 export default function Layout() {
