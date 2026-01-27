@@ -1,4 +1,5 @@
 import AppLink from "@/components/AppLink";
+import LinkWrapper from "@/components/LinkWrapper";
 import { useLocation } from "react-router-dom";
 
 export default function SessionInfo() {
