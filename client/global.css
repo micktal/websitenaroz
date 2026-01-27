@@ -64,9 +64,15 @@
     --navy-deep: 217 16% 6%;
     --accent-muted: 152 80% 12%;
     --glass: rgba(255,255,255,0.03);
+
+    /* Military theme helpers */
+    --military-olive: 102 18% 22%; /* deep olive */
+    --military-tan: 34 28% 60%; /* tan accent */
+    --military-accent: 100 30% 38%; /* brighter olive for badges */
+    --military-rust: 12 60% 38%;
   }
 
-  /* Noise overlay and scanline utilities */
+  /* Noise overlay, camo and visor utilities */
   .bg-noise {
     /* subtle grain using tiny radial-gradient tiles */
     background-image: radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
@@ -74,6 +80,24 @@
     opacity: 0.14;
     mix-blend-mode: overlay;
     pointer-events: none;
+  }
+
+  .camo-overlay {
+    /* subtle camo using layered linear-gradients */
+    background-image: linear-gradient(135deg, rgba(20,34,22,0.06) 10%, rgba(92,82,47,0.03) 30%, rgba(40,46,34,0.04) 60%), radial-gradient(circle at 10% 20%, rgba(255,255,255,0.02), transparent 12%);
+    opacity: 0.12;
+    pointer-events: none;
+  }
+
+  .military-visor {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 48px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.18), transparent 60%);
+    pointer-events: none;
+    mix-blend-mode: multiply;
   }
 
   .scanlines {
@@ -183,9 +207,10 @@
   .section-header .marker {
     width: 44px;
     height: 6px;
-    border-radius: 999px;
-    background: linear-gradient(90deg, hsl(var(--accent)), rgba(255,255,255,0.06));
-    box-shadow: 0 6px 30px rgba(62,232,166,0.06);
+    border-radius: 4px;
+    background: linear-gradient(90deg, hsl(var(--military-accent)), hsl(var(--military-olive)));
+    box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+    border: 1px solid rgba(0,0,0,0.2);
   }
 
   /* subdued secondary text */
