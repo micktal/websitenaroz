@@ -24,7 +24,7 @@ export default function Index() {
 
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="p-4 rounded-lg border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] hover:shadow-[0_8px_40px_rgba(62,232,166,0.06)] transition transform hover:-translate-y-1">
-                <h4 className="font-semibold">Did You Know?</h4>
+                <h4>Did You Know?</h4>
                 <ul className="mt-2 text-sm text-[rgba(248,250,252,0.65)] space-y-2">
                   <li>• Most incidents are caused by poor anticipation, not lack of courage</li>
                   <li>• The best protection teams avoid danger long before it becomes visible</li>
