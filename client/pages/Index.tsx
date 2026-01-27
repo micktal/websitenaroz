@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import { Link as RouterLink } from "react-router-dom";
+
 export default function Index() {
   return (
     <section className="min-h-screen relative overflow-hidden bg-[hsl(var(--navy-deep))] text-[hsl(var(--fg))]">
