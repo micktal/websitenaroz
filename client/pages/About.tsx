@@ -66,7 +66,7 @@ export default function About() {
             <p className="mt-4">Training does not end with certification. Our objective is to contribute to the development of responsible professionals, capable of adapting, thinking critically and operating with judgement in uncertain environments.</p>
 
             <div className="mt-6">
-              <LinkWrapper to="/contact" className="inline-flex items-center px-4 py-2 rounded-md bg-primary text-primary-foreground font-semibold">Contact us</LinkWrapper>
+              <LinkWrapper to="/contact" className="inline-flex items-center px-4 py-2 rounded-md bg-[hsl(var(--military-tan))] text-[hsl(var(--navy-deep))] font-medium uppercase tracking-wider">Contact Us</LinkWrapper>
             </div>
           </Card>
         </div>
