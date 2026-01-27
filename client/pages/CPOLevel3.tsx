@@ -4,6 +4,10 @@ export default function CPOLevel3() {
       <header className="mb-6">
         <h1 className="text-3xl md:text-4xl font-extrabold">Close Protection Level 3</h1>
         <p className="mt-2 text-muted-foreground">Certificate for Close Protection Operatives in the Private Security Industry</p>
+        <div className="mt-4">
+          <a href="/contact?course=Close%20Protection%20Level%203" className="inline-flex items-center px-4 py-2 rounded-md bg-primary text-primary-foreground font-semibold shadow">Book this course</a>
+          <a href="/contact?course=Close%20Protection%20Level%203" className="ml-3 text-sm text-muted-foreground underline">Request brochure</a>
+        </div>
       </header>
 
       <section className="space-y-6">
