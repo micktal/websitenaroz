@@ -95,6 +95,35 @@ export default function Index() {
         </div>
       </div>
 
+      {/* WHO WE PROTECT grid */}
+      <div className="container py-12 relative z-10">
+        <h2 className="text-center text-sm font-medium text-[rgba(248,250,252,0.6)]">WHO WE PROTECT</h2>
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            { title: 'Technology & SaaS', img: 'https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2Ff727b85568f64d93b8d31d993f44e9ac?format=webp&width=800&height=1200' },
+            { title: 'Finance & Fintech', img: 'https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2F3fc26777b70e4140b74bc2348f6f53a2?format=webp&width=800&height=1200' },
+            { title: 'Healthcare & Biotech', img: '' },
+            { title: 'E-commerce & Retail', img: '' },
+            { title: 'Energy & Manufacturing', img: '' },
+            { title: 'Telecommunications', img: '' },
+          ].map((c) => (
+            <div key={c.title} className="group relative rounded-lg overflow-hidden border border-[rgba(255,255,255,0.04)] hover:shadow-[0_10px_40px_rgba(62,232,166,0.06)] transition">
+              <div className="h-40 bg-[rgba(0,0,0,0.35)] flex items-center justify-center">
+                {c.img ? (
+                  <img src={c.img} alt={c.title} className="w-full h-full object-cover grayscale contrast-[0.85] group-hover:contrast-100" />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-[rgba(248,250,252,0.3)]">{c.title}</div>
+                )}
+              </div>
+              <div className="p-3 text-center bg-[rgba(255,255,255,0.02)]">
+                <div className="text-sm text-[rgba(248,250,252,0.95)]">{c.title}</div>
+              </div>
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-[hsl(var(--accent))]/60 pointer-events-none rounded-lg" />
+            </div>
+          ))}
+        </div>
+      </div>
+
     </section>
   );
 }
