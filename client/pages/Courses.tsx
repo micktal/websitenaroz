@@ -30,6 +30,11 @@ export default function Courses() {
           <p className="mt-2 text-sm text-muted-foreground">Professional course focused on observation, intelligence awareness and reporting.</p>
         </a>
 
+        <a href="/courses/protective-intelligence" className="block p-6 rounded-lg border border-border bg-card transform transition hover:scale-105 hover:shadow-lg animate-fade-up" style={{ animationDelay: '310ms' }}>
+          <h4 className="font-semibold">Protective Intelligence &amp; Advance Work Programme</h4>
+          <p className="mt-2 text-sm text-muted-foreground">Professional course emphasising advance work, reconnaissance and planning for protective operations.</p>
+        </a>
+
         <a href="/courses" className="block p-6 rounded-lg border border-border bg-card transform transition hover:scale-105 hover:shadow-lg animate-fade-up" style={{ animationDelay: '320ms' }}>
           <h4 className="font-semibold">Travel Security</h4>
           <p className="mt-2 text-sm text-muted-foreground">Pre-departure planning, safe transit and cultural briefings.</p>
