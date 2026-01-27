@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import AppLink from "@/components/AppLink";
 
-import { Link } from "react-router-dom";
+import AppLink from "@/components/AppLink";
 
 export default function Index() {
   return (
