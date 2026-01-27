@@ -65,7 +65,7 @@ export default function AboutHighfield() {
         </p>
 
         <div className="mt-6">
-          <RouterLink to="/contact" className="inline-flex items-center px-4 py-2 rounded-md bg-primary text-primary-foreground font-semibold">Contact us</RouterLink>
+          <AppLink to="/contact" className="inline-flex items-center px-4 py-2 rounded-md bg-primary text-primary-foreground font-semibold">Contact us</AppLink>
         </div>
       </section>
     </div>
