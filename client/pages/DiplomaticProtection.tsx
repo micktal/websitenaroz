@@ -7,9 +7,8 @@ export default function DiplomaticProtection() {
     <div className="max-w-4xl">
       <SectionHeader title="Diplomatic Protection Programme" subtitle="7-Day Intensive Course" />
 
-      <div className="mb-6 flex gap-3">
-        <a href="/contact?course=Diplomatic%20Protection%20Programme" className="inline-flex items-center px-4 py-2 rounded-md bg-[hsl(var(--accent))] text-[hsl(var(--accent-foreground))] font-semibold shadow">Book this course</a>
-        <a href="/contact?course=Diplomatic%20Protection%20Programme" className="ml-3 text-sm text-muted-foreground underline">Request brochure</a>
+      <div className="mb-6">
+        <a href="/contact?course=Diplomatic%20Protection%20Programme" className="inline-flex items-center px-5 py-3 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">Book this course</a>
       </div>
 
       <SessionInfo />
