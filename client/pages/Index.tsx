@@ -189,27 +189,27 @@ export default function Index() {
               style={{ animationDelay: "1s" }}
             />
 
-            <div className="relative px-8 py-12 md:px-12 md:py-16">
+            <div className="relative px-4 py-8 sm:px-6 sm:py-10 md:px-12 md:py-16">
               <div className="max-w-6xl mx-auto">
-                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div className="grid lg:grid-cols-2 gap-6 md:gap-8 items-center">
                   {/* Left Side - Promo Content */}
                   <div className="text-white">
                     {/* Badge */}
-                    <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6 border border-white/30">
+                    <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 bg-white/20 backdrop-blur-sm rounded-full mb-4 md:mb-6 border border-white/30">
                       <svg
-                        className="w-5 h-5 text-yellow-300 animate-pulse"
+                        className="w-4 h-4 md:w-5 md:h-5 text-yellow-300 animate-pulse"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
-                      <span className="text-sm font-bold uppercase tracking-wider">
-                        Limited Time Offer - March 2026
+                      <span className="text-xs md:text-sm font-bold uppercase tracking-wider">
+                        Limited Offer - March 2026
                       </span>
                     </div>
 
                     {/* Main Title */}
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-3 md:mb-4 leading-tight">
                       Full CPO Experience
                       <span className="block text-yellow-300">
                         All-Inclusive Package
@@ -217,7 +217,7 @@ export default function Index() {
                     </h2>
 
                     {/* Description */}
-                    <p className="text-xl md:text-2xl mb-8 text-white/90 font-medium">
+                    <p className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 text-white/90 font-medium">
                       Complete Close Protection Level 3 training with everything
                       you need — in beautiful Tirana!
                     </p>
