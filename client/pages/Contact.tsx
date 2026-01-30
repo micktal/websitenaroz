@@ -74,20 +74,10 @@ export default function Contact() {
 
         <aside>
           <Card className="p-6">
-            <div className="w-40 mx-auto">
-              <Illustration name="fingerprint" className="w-full h-auto" />
-            </div>
-            <div className="mt-4 text-center">
-              <h4 className="text-sm">Need help choosing?</h4>
-              <div className="text-xs text-muted-foreground mt-1">If you're unsure which programme fits your goals, tell us briefly and our team will advise.</div>
-            </div>
-
-            <Separator />
-
-            <div className="mt-4">
+            <div>
               <h4 className="text-sm">Contact</h4>
               <a href="mailto:training@naroz-shield.com" className="text-sm text-primary hover:underline mt-1 block">training@naroz-shield.com</a>
-              <div className="text-sm text-muted-foreground mt-1">+44 20 7946 0958</div>
+              <a href="tel:+385913575909" className="text-sm text-muted-foreground hover:text-primary mt-1 block">+385 91 357 5909</a>
             </div>
 
             <div className="mt-6">
