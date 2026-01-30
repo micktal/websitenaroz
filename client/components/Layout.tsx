@@ -26,6 +26,9 @@ export default function Layout() {
                 <LinkWrapper to="/about" className="hover:text-primary transition-colors">About</LinkWrapper>
               </li>
               <li>
+                <LinkWrapper to="/facilities" className="hover:text-primary transition-colors">Facilities</LinkWrapper>
+              </li>
+              <li>
                 <LinkWrapper to="/about-highfield" className="hover:text-primary transition-colors">Highfield</LinkWrapper>
               </li>
               <li>
