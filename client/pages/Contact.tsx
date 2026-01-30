@@ -33,7 +33,7 @@ export default function Contact() {
 
   return (
     <div>
-      <SectionHeader title="Contact & Book a Course" subtitle="Use the form to request a brochure, ask a question or book a course" />
+      <SectionHeader title="Contact & Book a Course" subtitle="Use the form to ask a question or book a course" />
 
       <div className="grid gap-8 lg:grid-cols-3">
         <div className="lg:col-span-2">
