@@ -6,8 +6,6 @@ import { toast } from "@/hooks/use-toast";
 
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
-import Illustration from "@/components/Illustration";
-import Separator from "@/components/Separator";
 
 export default function Contact() {
   const location = useLocation();
