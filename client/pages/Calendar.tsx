@@ -67,13 +67,10 @@ export default function Calendar() {
     <div className="max-w-7xl mx-auto">
       {/* Hero Section */}
       <div className="mb-12">
-        <SectionHeader 
-          title="Training Calendar" 
-          subtitle="Upcoming scheduled sessions and course dates" 
+        <SectionHeader
+          title="Training Calendar"
+          subtitle="Upcoming scheduled sessions and course dates"
         />
-        <p className="text-center text-muted-foreground mt-4 max-w-2xl mx-auto">
-          View all upcoming training sessions. Click on a session to see details, or use the Book button to reserve your place.
-        </p>
       </div>
 
       {/* Sessions Grid */}
