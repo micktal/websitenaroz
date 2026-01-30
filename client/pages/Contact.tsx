@@ -66,7 +66,6 @@ export default function Contact() {
 
               <div className="flex items-center gap-3">
                 <button type="submit" className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">Send request</button>
-                <button type="button" onClick={() => setForm({ name: "", email: "", course: "Close Protection", date: "", message: "" })} className="inline-flex items-center px-4 py-2 rounded-md border border-border hover:bg-gray-50 transition-colors">Clear</button>
                 <div className="ml-auto text-sm text-muted-foreground">By submitting you agree we may contact you regarding your enquiry.</div>
               </div>
             </form>
