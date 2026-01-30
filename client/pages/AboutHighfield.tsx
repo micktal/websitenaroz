@@ -7,11 +7,11 @@ export default function AboutHighfield() {
     <div className="max-w-6xl mx-auto">
       {/* Hero Section */}
       <div className="mb-16">
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-end mb-8">
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2F5ff0bed850854dc2ac2c034f77766073?format=webp&width=800&height=1200"
             alt="Highfield Qualifications Approved Centre"
-            className="h-24 w-auto"
+            className="h-20 w-auto grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100"
           />
         </div>
         <SectionHeader title="About Highfield Qualifications" subtitle="An International Awarding Body for Professional Excellence" />
