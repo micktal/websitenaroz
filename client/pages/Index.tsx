@@ -168,16 +168,26 @@ export default function Index() {
           <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 shadow-2xl">
             {/* Animated Background Pattern */}
             <div className="absolute inset-0 opacity-20">
-              <div className="absolute inset-0" style={{
-                backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.2) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.2) 0%, transparent 50%)',
-                animation: 'pulse 3s ease-in-out infinite'
-              }} />
+              <div
+                className="absolute inset-0"
+                style={{
+                  backgroundImage:
+                    "radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.2) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.2) 0%, transparent 50%)",
+                  animation: "pulse 3s ease-in-out infinite",
+                }}
+              />
             </div>
 
             {/* Sparkle Effects */}
             <div className="absolute top-8 right-12 w-3 h-3 bg-white rounded-full animate-ping opacity-75" />
-            <div className="absolute top-16 right-24 w-2 h-2 bg-yellow-200 rounded-full animate-ping opacity-75" style={{ animationDelay: '0.5s' }} />
-            <div className="absolute bottom-12 left-16 w-2 h-2 bg-white rounded-full animate-ping opacity-75" style={{ animationDelay: '1s' }} />
+            <div
+              className="absolute top-16 right-24 w-2 h-2 bg-yellow-200 rounded-full animate-ping opacity-75"
+              style={{ animationDelay: "0.5s" }}
+            />
+            <div
+              className="absolute bottom-12 left-16 w-2 h-2 bg-white rounded-full animate-ping opacity-75"
+              style={{ animationDelay: "1s" }}
+            />
 
             <div className="relative px-8 py-12 md:px-12 md:py-16">
               <div className="max-w-6xl mx-auto">
@@ -186,56 +196,113 @@ export default function Index() {
                   <div className="text-white">
                     {/* Badge */}
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-6 border border-white/30">
-                      <svg className="w-5 h-5 text-yellow-300 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+                      <svg
+                        className="w-5 h-5 text-yellow-300 animate-pulse"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
-                      <span className="text-sm font-bold uppercase tracking-wider">Limited Time Offer - March 2026</span>
+                      <span className="text-sm font-bold uppercase tracking-wider">
+                        Limited Time Offer - March 2026
+                      </span>
                     </div>
 
                     {/* Main Title */}
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
                       Full CPO Experience
-                      <span className="block text-yellow-300">All-Inclusive Package</span>
+                      <span className="block text-yellow-300">
+                        All-Inclusive Package
+                      </span>
                     </h2>
 
                     {/* Description */}
                     <p className="text-xl md:text-2xl mb-8 text-white/90 font-medium">
-                      Complete Close Protection Level 3 training with everything you need — in beautiful Tirana!
+                      Complete Close Protection Level 3 training with everything
+                      you need — in beautiful Tirana!
                     </p>
 
                     {/* What's Included */}
                     <div className="space-y-3 mb-8">
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                          <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          <svg
+                            className="w-5 h-5 text-white"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-lg font-medium">CPO Level 3 Full Certification</span>
+                        <span className="text-lg font-medium">
+                          CPO Level 3 Full Certification
+                        </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                          <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          <svg
+                            className="w-5 h-5 text-white"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-lg font-medium">Tactical Shooting Range Access</span>
+                        <span className="text-lg font-medium">
+                          Tactical Shooting Range Access
+                        </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                          <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          <svg
+                            className="w-5 h-5 text-white"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-lg font-medium">Full Board Accommodation</span>
+                        <span className="text-lg font-medium">
+                          Full Board Accommodation
+                        </span>
                       </div>
                       <div className="flex items-center gap-3">
                         <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                          <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                          <svg
+                            className="w-5 h-5 text-white"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M5 13l4 4L19 7"
+                            />
                           </svg>
                         </div>
-                        <span className="text-lg font-medium">All Meals & Refreshments Included</span>
+                        <span className="text-lg font-medium">
+                          All Meals & Refreshments Included
+                        </span>
                       </div>
                     </div>
 
@@ -245,8 +312,18 @@ export default function Index() {
                       className="inline-flex items-center gap-3 px-8 py-4 bg-white text-orange-600 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl"
                     >
                       <span>Book Your Spot Now</span>
-                      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      <svg
+                        className="w-6 h-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M13 7l5 5m0 0l-5 5m5-5H6"
+                        />
                       </svg>
                     </LinkWrapper>
                   </div>
@@ -257,54 +334,91 @@ export default function Index() {
                       {/* Starburst Badge */}
                       <div className="absolute -top-6 -right-6">
                         <div className="relative w-24 h-24 flex items-center justify-center">
-                          <div className="absolute inset-0 bg-yellow-400 rounded-full animate-spin" style={{ animationDuration: '20s' }}>
+                          <div
+                            className="absolute inset-0 bg-yellow-400 rounded-full animate-spin"
+                            style={{ animationDuration: "20s" }}
+                          >
                             <div className="absolute inset-2 bg-red-500 rounded-full" />
                             <div className="absolute inset-4 bg-yellow-400 rounded-full" />
                           </div>
                           <div className="relative z-10 text-center">
-                            <div className="text-white font-bold text-xs">SAVE</div>
-                            <div className="text-white font-bold text-lg">30%</div>
+                            <div className="text-white font-bold text-xs">
+                              SAVE
+                            </div>
+                            <div className="text-white font-bold text-lg">
+                              30%
+                            </div>
                           </div>
                         </div>
                       </div>
 
                       <div className="text-center mb-6">
-                        <div className="text-gray-500 text-sm uppercase tracking-wider mb-2">Special Package Price</div>
+                        <div className="text-gray-500 text-sm uppercase tracking-wider mb-2">
+                          Special Package Price
+                        </div>
                         <div className="flex items-baseline justify-center gap-2">
-                          <span className="text-gray-400 text-2xl line-through">€5,200</span>
+                          <span className="text-gray-400 text-2xl line-through">
+                            €5,200
+                          </span>
                           <div className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-600">
                             €3,700
                           </div>
                         </div>
-                        <div className="text-gray-600 mt-2">Complete all-inclusive package</div>
+                        <div className="text-gray-600 mt-2">
+                          Complete all-inclusive package
+                        </div>
                       </div>
 
                       <div className="border-t border-gray-200 pt-6 space-y-3">
                         <div className="flex justify-between text-sm">
-                          <span className="text-gray-600">Training Duration:</span>
-                          <span className="font-semibold text-gray-900">5 Full Days</span>
+                          <span className="text-gray-600">
+                            Training Duration:
+                          </span>
+                          <span className="font-semibold text-gray-900">
+                            5 Full Days
+                          </span>
                         </div>
                         <div className="flex justify-between text-sm">
                           <span className="text-gray-600">Location:</span>
-                          <span className="font-semibold text-gray-900">Tirana, Albania</span>
+                          <span className="font-semibold text-gray-900">
+                            Tirana, Albania
+                          </span>
                         </div>
                         <div className="flex justify-between text-sm">
                           <span className="text-gray-600">Available:</span>
-                          <span className="font-semibold text-primary">March 2026</span>
+                          <span className="font-semibold text-primary">
+                            March 2026
+                          </span>
                         </div>
                         <div className="flex justify-between text-sm">
-                          <span className="text-gray-600">Spots Remaining:</span>
-                          <span className="font-semibold text-red-600">Only 4 Left!</span>
+                          <span className="text-gray-600">
+                            Spots Remaining:
+                          </span>
+                          <span className="font-semibold text-red-600">
+                            Only 4 Left!
+                          </span>
                         </div>
                       </div>
 
                       <div className="mt-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-lg p-4 border border-orange-200">
                         <div className="flex items-start gap-3">
-                          <svg className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                          <svg
+                            className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                              clipRule="evenodd"
+                            />
                           </svg>
                           <div className="text-sm text-gray-700">
-                            <strong className="text-orange-600">Early Bird Bonus:</strong> Book before Feb 15 and receive FREE tactical equipment kit worth €400!
+                            <strong className="text-orange-600">
+                              Early Bird Bonus:
+                            </strong>{" "}
+                            Book before Feb 15 and receive FREE tactical
+                            equipment kit worth €400!
                           </div>
                         </div>
                       </div>
