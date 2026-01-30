@@ -329,42 +329,42 @@ export default function Index() {
                   </div>
 
                   {/* Right Side - Price Card */}
-                  <div className="relative">
-                    <div className="bg-white rounded-2xl shadow-2xl p-8 transform lg:scale-105 hover:scale-110 transition-transform">
+                  <div className="relative mt-8 lg:mt-0">
+                    <div className="bg-white rounded-xl md:rounded-2xl shadow-2xl p-5 md:p-8 transform lg:scale-105 hover:scale-110 transition-transform">
                       {/* Starburst Badge */}
-                      <div className="absolute -top-6 -right-6">
-                        <div className="relative w-24 h-24 flex items-center justify-center">
+                      <div className="absolute -top-4 -right-4 md:-top-6 md:-right-6">
+                        <div className="relative w-16 h-16 md:w-24 md:h-24 flex items-center justify-center">
                           <div
                             className="absolute inset-0 bg-yellow-400 rounded-full animate-spin"
                             style={{ animationDuration: "20s" }}
                           >
-                            <div className="absolute inset-2 bg-red-500 rounded-full" />
-                            <div className="absolute inset-4 bg-yellow-400 rounded-full" />
+                            <div className="absolute inset-1 md:inset-2 bg-red-500 rounded-full" />
+                            <div className="absolute inset-2 md:inset-4 bg-yellow-400 rounded-full" />
                           </div>
                           <div className="relative z-10 text-center">
-                            <div className="text-white font-bold text-xs">
+                            <div className="text-white font-bold text-[10px] md:text-xs">
                               SAVE
                             </div>
-                            <div className="text-white font-bold text-lg">
+                            <div className="text-white font-bold text-base md:text-lg">
                               30%
                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div className="text-center mb-6">
-                        <div className="text-gray-500 text-sm uppercase tracking-wider mb-2">
+                      <div className="text-center mb-4 md:mb-6">
+                        <div className="text-gray-500 text-xs md:text-sm uppercase tracking-wider mb-2">
                           Special Package Price
                         </div>
-                        <div className="flex items-baseline justify-center gap-2">
-                          <span className="text-gray-400 text-2xl line-through">
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
+                          <span className="text-gray-400 text-xl md:text-2xl line-through">
                             €5,200
                           </span>
-                          <div className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-600">
+                          <div className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-600">
                             €3,700
                           </div>
                         </div>
-                        <div className="text-gray-600 mt-2">
+                        <div className="text-gray-600 mt-2 text-sm md:text-base">
                           Complete all-inclusive package
                         </div>
                       </div>
