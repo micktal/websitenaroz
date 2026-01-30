@@ -7,9 +7,8 @@ export default function CPOLevel3() {
     <div className="max-w-4xl">
       <SectionHeader title="Close Protection Level 3" subtitle="Certificate for Close Protection Operatives in the Private Security Industry" />
 
-      <div className="mb-6 flex gap-3">
-        <a href="/contact?course=Close%20Protection%20Level%203" className="inline-flex items-center px-4 py-2 rounded-md bg-[hsl(var(--accent))] text-[hsl(var(--accent-foreground))] font-semibold shadow">Book this course</a>
-        <a href="/contact?course=Close%20Protection%20Level%203" className="ml-3 text-sm text-muted-foreground underline">Request brochure</a>
+      <div className="mb-6">
+        <a href="/contact?course=Close%20Protection%20Level%203" className="inline-flex items-center px-5 py-3 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">Book this course</a>
       </div>
 
       <SessionInfo />
