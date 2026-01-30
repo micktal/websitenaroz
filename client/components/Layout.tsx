@@ -55,7 +55,11 @@ export default function Layout() {
       <footer className="border-t border-border py-8">
         <div className="container text-sm text-muted-foreground flex flex-col md:flex-row items-center justify-between gap-4">
           <div>© {new Date().getFullYear()} Naroz Shield Institute</div>
-          <div>Made for international protection & training</div>
+          <div className="flex items-center gap-4">
+            <a href="mailto:training@naroz-shield.com" className="text-primary hover:underline">training@naroz-shield.com</a>
+            <span className="hidden md:inline">•</span>
+            <span className="hidden md:inline">International protection & training</span>
+          </div>
         </div>
       </footer>
     </div>
