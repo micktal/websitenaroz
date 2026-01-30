@@ -54,6 +54,43 @@ export default function Layout() {
 
       <footer className="border-t border-border py-8">
         <div className="container">
+          {/* Training Programmes Quick Links */}
+          <div className="mb-8 pb-8 border-b border-border">
+            <h3 className="text-center text-lg font-semibold text-primary mb-6">Our Training Programmes</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-5xl mx-auto">
+              <LinkWrapper to="/courses/cpo-level-3" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Close Protection Level 3
+              </LinkWrapper>
+              <LinkWrapper to="/courses/diplomatic-protection" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Diplomatic Protection
+              </LinkWrapper>
+              <LinkWrapper to="/courses/counter-terrorism" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Counter-Terrorism
+              </LinkWrapper>
+              <LinkWrapper to="/courses/surveillance-intelligence" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Surveillance & Intelligence
+              </LinkWrapper>
+              <LinkWrapper to="/courses/protective-intelligence" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Protective Intelligence
+              </LinkWrapper>
+              <LinkWrapper to="/courses/heat" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                HEAT Training
+              </LinkWrapper>
+              <LinkWrapper to="/courses/protective-medical" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Protective Medical
+              </LinkWrapper>
+              <LinkWrapper to="/courses/protective-operations" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Operations Management
+              </LinkWrapper>
+              <LinkWrapper to="/courses/tactical-firearms" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Tactical Firearms
+              </LinkWrapper>
+              <LinkWrapper to="/courses/tactical-driving" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                Tactical Driving
+              </LinkWrapper>
+            </div>
+          </div>
+
           {/* Trust Badges */}
           <div className="flex flex-wrap items-center justify-center gap-8 mb-8 pb-8 border-b border-border">
             <div className="text-center">
