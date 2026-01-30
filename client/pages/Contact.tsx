@@ -9,7 +9,13 @@ import Card from "@/components/Card";
 
 export default function Contact() {
   const location = useLocation();
-  const [form, setForm] = React.useState({ name: "", email: "", course: "Close Protection", date: "", message: "" });
+  const [form, setForm] = React.useState({
+    name: "",
+    email: "",
+    course: "Close Protection",
+    date: "",
+    message: "",
+  });
 
   React.useEffect(() => {
     const params = new URLSearchParams(location.search);
@@ -19,37 +25,73 @@ export default function Contact() {
     }
   }, [location.search]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast({ title: "Request received", description: `Thanks ${form.name || 'candidate'} — we received your booking request for ${form.course}. We'll contact you at ${form.email || 'your email'}.` });
-    setForm({ name: "", email: "", course: "Close Protection", date: "", message: "" });
+    toast({
+      title: "Request received",
+      description: `Thanks ${form.name || "candidate"} — we received your booking request for ${form.course}. We'll contact you at ${form.email || "your email"}.`,
+    });
+    setForm({
+      name: "",
+      email: "",
+      course: "Close Protection",
+      date: "",
+      message: "",
+    });
   };
 
   return (
     <div>
-      <SectionHeader title="Contact & Book a Course" subtitle="Use the form to ask a question or book a course" />
+      <SectionHeader
+        title="Contact & Book a Course"
+        subtitle="Use the form to ask a question or book a course"
+      />
 
       <div className="grid gap-8 lg:grid-cols-3">
         <div className="lg:col-span-2">
           <Card>
             <form onSubmit={handleSubmit} className="mt-2 grid gap-4">
               <div className="grid sm:grid-cols-2 gap-4">
-                <input name="name" value={form.name} onChange={handleChange} placeholder="Full name" className="w-full rounded-md border border-border px-4 py-2 bg-card" />
-                <input name="email" value={form.email} onChange={handleChange} placeholder="Email address" type="email" className="w-full rounded-md border border-border px-4 py-2 bg-card" />
+                <input
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  placeholder="Full name"
+                  className="w-full rounded-md border border-border px-4 py-2 bg-card"
+                />
+                <input
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
+                  placeholder="Email address"
+                  type="email"
+                  className="w-full rounded-md border border-border px-4 py-2 bg-card"
+                />
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4">
-                <select name="course" value={form.course} onChange={handleChange} className="w-full rounded-md border border-border px-4 py-2 bg-card">
+                <select
+                  name="course"
+                  value={form.course}
+                  onChange={handleChange}
+                  className="w-full rounded-md border border-border px-4 py-2 bg-card"
+                >
                   <option>Close Protection</option>
                   <option>Close Protection Level 3</option>
                   <option>Diplomatic Protection Programme</option>
                   <option>Counter-Terrorism Protection Programme</option>
                   <option>Surveillance &amp; Intelligence Programme</option>
-                  <option>Protective Intelligence &amp; Advance Work Programme</option>
+                  <option>
+                    Protective Intelligence &amp; Advance Work Programme
+                  </option>
                   <option>Hostile Environment Awareness Training (HEAT)</option>
                   <option>Protective Medical Support Programme</option>
                   <option>Protective Operations Management</option>
@@ -57,14 +99,36 @@ export default function Contact() {
                   <option>Tactical Driving Programme</option>
                 </select>
 
-                <input name="date" value={form.date} onChange={handleChange} placeholder="Preferred date" type="date" className="w-full rounded-md border border-border px-4 py-2 bg-card" />
+                <input
+                  name="date"
+                  value={form.date}
+                  onChange={handleChange}
+                  placeholder="Preferred date"
+                  type="date"
+                  className="w-full rounded-md border border-border px-4 py-2 bg-card"
+                />
               </div>
 
-              <textarea name="message" value={form.message} onChange={handleChange} placeholder="Message (optional)" className="w-full rounded-md border border-border px-4 py-2 bg-card" rows={6} />
+              <textarea
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                placeholder="Message (optional)"
+                className="w-full rounded-md border border-border px-4 py-2 bg-card"
+                rows={6}
+              />
 
               <div className="flex items-center gap-3">
-                <button type="submit" className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">Send request</button>
-                <div className="ml-auto text-sm text-muted-foreground">By submitting you agree we may contact you regarding your enquiry.</div>
+                <button
+                  type="submit"
+                  className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
+                >
+                  Send request
+                </button>
+                <div className="ml-auto text-sm text-muted-foreground">
+                  By submitting you agree we may contact you regarding your
+                  enquiry.
+                </div>
               </div>
             </form>
           </Card>
@@ -74,21 +138,48 @@ export default function Contact() {
           <Card className="p-6">
             <div>
               <h4 className="text-sm">Contact</h4>
-              <a href="mailto:training@naroz-shield.com" className="text-sm text-primary hover:underline mt-1 block">training@naroz-shield.com</a>
-              <a href="tel:+385913575909" className="text-sm text-muted-foreground hover:text-primary mt-1 block">+385 91 357 5909</a>
+              <a
+                href="mailto:training@naroz-shield.com"
+                className="text-sm text-primary hover:underline mt-1 block"
+              >
+                training@naroz-shield.com
+              </a>
+              <a
+                href="tel:+385913575909"
+                className="text-sm text-muted-foreground hover:text-primary mt-1 block"
+              >
+                +385 91 357 5909
+              </a>
             </div>
 
             <div className="mt-6">
               <h4 className="text-sm">Office Hours</h4>
-              <div className="text-sm text-muted-foreground">Mon–Fri 09:00–18:00 (GMT)</div>
+              <div className="text-sm text-muted-foreground">
+                Mon–Fri 09:00–18:00 (GMT)
+              </div>
             </div>
 
             <div className="mt-6">
               <h4 className="text-sm">Quick Links</h4>
               <ul className="mt-2 space-y-2 text-sm">
-                <li><a href="/courses" className="text-primary hover:underline">Explore programmes</a></li>
-                <li><a href="/calendar" className="text-primary hover:underline">View calendar</a></li>
-                <li><a href="/about-highfield" className="text-primary hover:underline">About Highfield</a></li>
+                <li>
+                  <a href="/courses" className="text-primary hover:underline">
+                    Explore programmes
+                  </a>
+                </li>
+                <li>
+                  <a href="/calendar" className="text-primary hover:underline">
+                    View calendar
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/about-highfield"
+                    className="text-primary hover:underline"
+                  >
+                    About Highfield
+                  </a>
+                </li>
               </ul>
             </div>
           </Card>

@@ -42,15 +42,39 @@ const App = () => (
             <Route path="about" element={<About />} />
             <Route path="courses" element={<Courses />} />
             <Route path="courses/cpo-level-3" element={<CPOLevel3 />} />
-            <Route path="courses/diplomatic-protection" element={<DiplomaticProtection />} />
-            <Route path="courses/tactical-driving" element={<TacticalDriving />} />
-            <Route path="courses/tactical-firearms" element={<TacticalFirearms />} />
-            <Route path="courses/counter-terrorism" element={<CounterTerrorism />} />
-            <Route path="courses/surveillance-intelligence" element={<SurveillanceIntelligence />} />
-            <Route path="courses/protective-intelligence" element={<ProtectiveIntelligence />} />
+            <Route
+              path="courses/diplomatic-protection"
+              element={<DiplomaticProtection />}
+            />
+            <Route
+              path="courses/tactical-driving"
+              element={<TacticalDriving />}
+            />
+            <Route
+              path="courses/tactical-firearms"
+              element={<TacticalFirearms />}
+            />
+            <Route
+              path="courses/counter-terrorism"
+              element={<CounterTerrorism />}
+            />
+            <Route
+              path="courses/surveillance-intelligence"
+              element={<SurveillanceIntelligence />}
+            />
+            <Route
+              path="courses/protective-intelligence"
+              element={<ProtectiveIntelligence />}
+            />
             <Route path="courses/heat" element={<HEAT />} />
-            <Route path="courses/protective-medical" element={<ProtectiveMedical />} />
-            <Route path="courses/protective-operations" element={<ProtectiveOperations />} />
+            <Route
+              path="courses/protective-medical"
+              element={<ProtectiveMedical />}
+            />
+            <Route
+              path="courses/protective-operations"
+              element={<ProtectiveOperations />}
+            />
             <Route path="pay" element={<Pay />} />
             <Route path="about-highfield" element={<AboutHighfield />} />
             <Route path="facilities" element={<Facilities />} />
