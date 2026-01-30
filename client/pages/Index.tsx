@@ -67,15 +67,42 @@ export default function Index() {
             </div>
           </div>
 
-          <aside className="relative">
-            <div className="rounded-2xl overflow-hidden border border-border p-6 bg-white shadow-sm">
+          <aside className="relative group">
+            <div className="rounded-2xl overflow-hidden border border-border p-6 bg-white shadow-sm hover:shadow-xl transition-shadow duration-500">
               <div className="aspect-[4/3] w-full rounded-lg overflow-hidden relative">
-                <img src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2Fcc97a581c8bf44d68c6c55bc5cb2c41c?format=webp&width=800&height=1200" alt="Professional Close Protection Agents" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                <div className="absolute left-6 bottom-6">
-                  <div className="px-3 py-2 rounded bg-white/95 backdrop-blur-sm text-sm text-primary">More than training — an operational path</div>
+                {/* Main Image */}
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2Fcc97a581c8bf44d68c6c55bc5cb2c41c?format=webp&width=800&height=1200"
+                  alt="Professional Close Protection Agents"
+                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                />
+
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
+
+                {/* Vignette Effect */}
+                <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-black/20" />
+
+                {/* Subtle Blue Tint */}
+                <div className="absolute inset-0 bg-primary/5 mix-blend-overlay" />
+
+                {/* Border Frame Effect */}
+                <div className="absolute inset-0 border-2 border-white/10 pointer-events-none" />
+
+                {/* Shine Effect on Hover */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform -translate-x-full group-hover:translate-x-full" />
+
+                {/* Text Badge */}
+                <div className="absolute left-6 bottom-6 z-10">
+                  <div className="px-3 py-2 rounded bg-white/95 backdrop-blur-sm text-sm text-primary shadow-lg">
+                    More than training — an operational path
+                  </div>
                 </div>
               </div>
+
+              {/* Decorative Corner Elements */}
+              <div className="absolute top-2 left-2 w-12 h-12 border-t-2 border-l-2 border-primary/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute bottom-2 right-2 w-12 h-12 border-b-2 border-r-2 border-primary/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <div className="mt-6 grid grid-cols-2 gap-4">
                 <div className="p-3 bg-gray-50 rounded border border-border">
