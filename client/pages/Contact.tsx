@@ -65,8 +65,8 @@ export default function Contact() {
               <textarea name="message" value={form.message} onChange={handleChange} placeholder="Message (optional)" className="w-full rounded-md border border-border px-4 py-2 bg-card" rows={6} />
 
               <div className="flex items-center gap-3">
-                <button type="submit" className="inline-flex items-center px-6 py-3 rounded-md bg-[hsl(var(--accent))] text-[hsl(var(--accent-foreground))] font-semibold shadow-lg">Send request</button>
-                <button type="button" onClick={() => setForm({ name: "", email: "", course: "Close Protection", date: "", message: "" })} className="inline-flex items-center px-4 py-2 rounded-md border border-border">Clear</button>
+                <button type="submit" className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">Send request</button>
+                <button type="button" onClick={() => setForm({ name: "", email: "", course: "Close Protection", date: "", message: "" })} className="inline-flex items-center px-4 py-2 rounded-md border border-border hover:bg-gray-50 transition-colors">Clear</button>
                 <div className="ml-auto text-sm text-muted-foreground">By submitting you agree we may contact you regarding your enquiry.</div>
               </div>
             </form>
@@ -87,8 +87,8 @@ export default function Contact() {
 
             <div className="mt-4">
               <h4 className="text-sm">Contact</h4>
-              <div className="text-sm text-muted-foreground mt-1">hello@narozshield.example</div>
-              <div className="text-sm text-muted-foreground">+44 20 7946 0958</div>
+              <a href="mailto:training@naroz-shield.com" className="text-sm text-primary hover:underline mt-1 block">training@naroz-shield.com</a>
+              <div className="text-sm text-muted-foreground mt-1">+44 20 7946 0958</div>
             </div>
 
             <div className="mt-6">
@@ -99,9 +99,9 @@ export default function Contact() {
             <div className="mt-6">
               <h4 className="text-sm">Quick Links</h4>
               <ul className="mt-2 space-y-2 text-sm">
-                <li><a href="/courses" className="text-[hsl(var(--accent))] hover:underline">Explore programmes</a></li>
-                <li><a href="/calendar" className="text-[hsl(var(--accent))] hover:underline">View calendar</a></li>
-                <li><a href="/about-highfield" className="text-[hsl(var(--accent))] hover:underline">About Highfield</a></li>
+                <li><a href="/courses" className="text-primary hover:underline">Explore programmes</a></li>
+                <li><a href="/calendar" className="text-primary hover:underline">View calendar</a></li>
+                <li><a href="/about-highfield" className="text-primary hover:underline">About Highfield</a></li>
               </ul>
             </div>
           </Card>
