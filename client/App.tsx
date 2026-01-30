@@ -25,6 +25,7 @@ import ProtectiveMedical from "./pages/ProtectiveMedical";
 import ProtectiveOperations from "./pages/ProtectiveOperations";
 import Pay from "./pages/Pay";
 import AboutHighfield from "./pages/AboutHighfield";
+import Facilities from "./pages/Facilities";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
