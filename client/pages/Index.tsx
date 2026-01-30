@@ -369,8 +369,8 @@ export default function Index() {
                         </div>
                       </div>
 
-                      <div className="border-t border-gray-200 pt-6 space-y-3">
-                        <div className="flex justify-between text-sm">
+                      <div className="border-t border-gray-200 pt-4 md:pt-6 space-y-2 md:space-y-3">
+                        <div className="flex justify-between text-xs md:text-sm">
                           <span className="text-gray-600">
                             Training Duration:
                           </span>
@@ -378,19 +378,19 @@ export default function Index() {
                             5 Full Days
                           </span>
                         </div>
-                        <div className="flex justify-between text-sm">
+                        <div className="flex justify-between text-xs md:text-sm">
                           <span className="text-gray-600">Location:</span>
                           <span className="font-semibold text-gray-900">
                             Tirana, Albania
                           </span>
                         </div>
-                        <div className="flex justify-between text-sm">
+                        <div className="flex justify-between text-xs md:text-sm">
                           <span className="text-gray-600">Available:</span>
                           <span className="font-semibold text-primary">
                             March 2026
                           </span>
                         </div>
-                        <div className="flex justify-between text-sm">
+                        <div className="flex justify-between text-xs md:text-sm">
                           <span className="text-gray-600">
                             Spots Remaining:
                           </span>
@@ -400,10 +400,10 @@ export default function Index() {
                         </div>
                       </div>
 
-                      <div className="mt-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-lg p-4 border border-orange-200">
-                        <div className="flex items-start gap-3">
+                      <div className="mt-4 md:mt-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-lg p-3 md:p-4 border border-orange-200">
+                        <div className="flex items-start gap-2 md:gap-3">
                           <svg
-                            className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5"
+                            className="w-4 h-4 md:w-5 md:h-5 text-orange-600 flex-shrink-0 mt-0.5"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                           >
@@ -413,7 +413,7 @@ export default function Index() {
                               clipRule="evenodd"
                             />
                           </svg>
-                          <div className="text-sm text-gray-700">
+                          <div className="text-xs md:text-sm text-gray-700">
                             <strong className="text-orange-600">
                               Early Bird Bonus:
                             </strong>{" "}
