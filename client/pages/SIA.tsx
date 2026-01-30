@@ -1,18 +1,16 @@
 export default function SIA() {
   return (
     <div className="max-w-4xl">
-      <div className="flex flex-col md:flex-row items-start md:items-center gap-6 mb-8">
-        <div className="flex-shrink-0">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2Fd057780ebfb44287962bbce62cfe94b5?format=webp&width=800&height=1200"
-            alt="Security Industry Authority"
-            className="h-24 w-auto"
-          />
-        </div>
-        <div>
-          <h2 className="text-3xl font-bold">About the SIA Licence</h2>
-          <p className="text-sm text-muted-foreground mt-2">Official regulatory body for the UK private security industry</p>
-        </div>
+      <div className="flex justify-end mb-8">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2Fd057780ebfb44287962bbce62cfe94b5?format=webp&width=800&height=1200"
+          alt="Security Industry Authority"
+          className="h-20 w-auto grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100"
+        />
+      </div>
+      <div className="mb-8">
+        <h2 className="text-3xl font-bold">About the SIA Licence</h2>
+        <p className="text-sm text-muted-foreground mt-2">Official regulatory body for the UK private security industry</p>
       </div>
 
       <p className="mt-6 text-muted-foreground">The Security Industry Authority (SIA) is the official regulatory body responsible for overseeing the private security industry in the United Kingdom.</p>
