@@ -223,11 +223,11 @@ export default function Index() {
                     </p>
 
                     {/* What's Included */}
-                    <div className="space-y-3 mb-8">
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                    <div className="space-y-2 md:space-y-3 mb-6 md:mb-8">
+                      <div className="flex items-center gap-2 md:gap-3">
+                        <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
                           <svg
-                            className="w-5 h-5 text-white"
+                            className="w-4 h-4 md:w-5 md:h-5 text-white"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -240,14 +240,14 @@ export default function Index() {
                             />
                           </svg>
                         </div>
-                        <span className="text-lg font-medium">
+                        <span className="text-base md:text-lg font-medium">
                           CPO Level 3 Full Certification
                         </span>
                       </div>
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                      <div className="flex items-center gap-2 md:gap-3">
+                        <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
                           <svg
-                            className="w-5 h-5 text-white"
+                            className="w-4 h-4 md:w-5 md:h-5 text-white"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -260,14 +260,14 @@ export default function Index() {
                             />
                           </svg>
                         </div>
-                        <span className="text-lg font-medium">
+                        <span className="text-base md:text-lg font-medium">
                           Tactical Shooting Range Access
                         </span>
                       </div>
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                      <div className="flex items-center gap-2 md:gap-3">
+                        <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
                           <svg
-                            className="w-5 h-5 text-white"
+                            className="w-4 h-4 md:w-5 md:h-5 text-white"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -280,14 +280,14 @@ export default function Index() {
                             />
                           </svg>
                         </div>
-                        <span className="text-lg font-medium">
+                        <span className="text-base md:text-lg font-medium">
                           Full Board Accommodation
                         </span>
                       </div>
-                      <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                      <div className="flex items-center gap-2 md:gap-3">
+                        <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
                           <svg
-                            className="w-5 h-5 text-white"
+                            className="w-4 h-4 md:w-5 md:h-5 text-white"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -300,7 +300,7 @@ export default function Index() {
                             />
                           </svg>
                         </div>
-                        <span className="text-lg font-medium">
+                        <span className="text-base md:text-lg font-medium">
                           All Meals & Refreshments Included
                         </span>
                       </div>
@@ -309,11 +309,11 @@ export default function Index() {
                     {/* CTA Button */}
                     <LinkWrapper
                       to="/contact?course=CPO%20Level%203%20Full%20Combo%20-%20March%202026"
-                      className="inline-flex items-center gap-3 px-8 py-4 bg-white text-orange-600 rounded-lg font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl"
+                      className="inline-flex items-center justify-center gap-2 md:gap-3 px-6 py-3 md:px-8 md:py-4 bg-white text-orange-600 rounded-lg font-bold text-base md:text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl w-full sm:w-auto"
                     >
                       <span>Book Your Spot Now</span>
                       <svg
-                        className="w-6 h-6"
+                        className="w-5 h-5 md:w-6 md:h-6"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
