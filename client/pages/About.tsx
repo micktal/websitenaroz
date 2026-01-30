@@ -129,14 +129,100 @@ export default function About() {
         </Card>
       </div>
 
+      {/* Meet Our Instructors Section */}
+      <div className="mb-16">
+        <h2 className="text-2xl mb-6 text-primary text-center">Meet Our Instructors</h2>
+        <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
+          Experienced professionals with operational backgrounds in high-risk security environments
+        </p>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {/* Instructor 1: Anti-Terrorism */}
+          <div className="bg-white border border-border rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div className="bg-gradient-to-br from-primary/5 to-primary/10 p-8 text-center">
+              <div className="w-32 h-32 mx-auto rounded-full bg-primary/20 border-4 border-white shadow-lg flex items-center justify-center">
+                <svg className="w-16 h-16 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-primary mt-4">Colonel David Harper</h3>
+              <p className="text-sm text-muted-foreground">Anti-Terrorism Specialist</p>
+            </div>
+            <div className="p-6">
+              <div className="mb-4">
+                <h4 className="text-sm font-semibold text-primary mb-2">Background</h4>
+                <p className="text-sm text-muted-foreground">
+                  22 years serving in military counter-terrorism units. Former advisor to international security agencies on threat assessment and preventive operations.
+                </p>
+              </div>
+              <div className="mb-4">
+                <h4 className="text-sm font-semibold text-primary mb-2">Expertise</h4>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full">Threat Assessment</span>
+                  <span className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full">Crisis Management</span>
+                  <span className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full">Tactical Planning</span>
+                  <span className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full">Protective Intelligence</span>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-sm font-semibold text-primary mb-2">Teaches</h4>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Counter-Terrorism Protection Programme</li>
+                  <li>• Hostile Environment Awareness Training</li>
+                  <li>• Protective Intelligence & Advance Work</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Instructor 2: Counter-Terrorism */}
+          <div className="bg-white border border-border rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div className="bg-gradient-to-br from-primary/5 to-primary/10 p-8 text-center">
+              <div className="w-32 h-32 mx-auto rounded-full bg-primary/20 border-4 border-white shadow-lg flex items-center justify-center">
+                <svg className="w-16 h-16 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold text-primary mt-4">Commander Sarah Mitchell</h3>
+              <p className="text-sm text-muted-foreground">Counter-Terrorism Operations Specialist</p>
+            </div>
+            <div className="p-6">
+              <div className="mb-4">
+                <h4 className="text-sm font-semibold text-primary mb-2">Background</h4>
+                <p className="text-sm text-muted-foreground">
+                  18 years operational experience in counter-terrorism and special operations. Led protective security teams in hostile environments across three continents.
+                </p>
+              </div>
+              <div className="mb-4">
+                <h4 className="text-sm font-semibold text-primary mb-2">Expertise</h4>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full">Close Protection</span>
+                  <span className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full">Surveillance Detection</span>
+                  <span className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full">Tactical Response</span>
+                  <span className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full">Team Leadership</span>
+                </div>
+              </div>
+              <div>
+                <h4 className="text-sm font-semibold text-primary mb-2">Teaches</h4>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Close Protection Level 3</li>
+                  <li>• Diplomatic Protection Programme</li>
+                  <li>• Surveillance & Intelligence Programme</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Closing Statement + CTA */}
       <div className="text-center mb-12">
         <Card className="p-8 bg-gray-50">
           <p className="text-lg text-foreground max-w-3xl mx-auto mb-6">
             Training does not end with certification. Our objective is to contribute to the development of responsible professionals, capable of adapting, thinking critically and operating with judgement in uncertain environments.
           </p>
-          <LinkWrapper 
-            to="/contact" 
+          <LinkWrapper
+            to="/contact"
             className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-lg"
           >
             Get in Touch
