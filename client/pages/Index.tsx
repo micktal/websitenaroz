@@ -164,8 +164,8 @@ export default function Index() {
         </div>
 
         {/* PROMO SECTION - March Special Offer */}
-        <div className="mt-24 -mx-4 lg:-mx-8 relative">
-          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 shadow-2xl">
+        <div className="mt-12 md:mt-24 -mx-4 md:-mx-6 lg:-mx-8 relative">
+          <div className="relative overflow-hidden rounded-xl md:rounded-2xl bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 shadow-2xl">
             {/* Animated Background Pattern */}
             <div className="absolute inset-0 opacity-20">
               <div
