@@ -6,6 +6,15 @@ export default function Index() {
       {/* subtle noise */}
       <div className="absolute inset-0 pointer-events-none bg-noise" />
 
+      {/* Logo watermark background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2F947900be11374c6193cb00d108c35b16?format=webp&width=800&height=1200"
+          alt=""
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-auto opacity-[0.03] grayscale"
+        />
+      </div>
+
       <div className="container py-20 relative z-10">
         <div className="grid gap-12 lg:grid-cols-2 items-center">
           <div className="space-y-6">
