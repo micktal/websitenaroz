@@ -82,6 +82,100 @@ export default function Index() {
             </div>
           </aside>
         </div>
+
+        {/* Testimonials Section */}
+        <div className="mt-24 max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-primary mb-3">What Our Graduates Say</h2>
+            <p className="text-muted-foreground">Real experiences from professionals who completed our programmes</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Testimonial 1: Diplomatic Protection */}
+            <div className="bg-white border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-primary">James M.</h4>
+                  <p className="text-xs text-muted-foreground">Diplomatic Protection Operative</p>
+                </div>
+              </div>
+              <div className="mb-4">
+                <div className="flex gap-1 mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground italic mb-4">
+                "The Diplomatic Protection Programme completely changed my approach to security work. The instructors' real-world experience was invaluable. I now work for an international protection team supporting diplomatic missions."
+              </p>
+              <div className="text-xs text-primary font-medium">Diplomatic Protection Programme</div>
+            </div>
+
+            {/* Testimonial 2: Tactical Firearms */}
+            <div className="bg-white border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-primary">Sarah K.</h4>
+                  <p className="text-xs text-muted-foreground">Security Consultant</p>
+                </div>
+              </div>
+              <div className="mb-4">
+                <div className="flex gap-1 mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground italic mb-4">
+                "Professional, disciplined and realistic. The Tactical Firearms training gave me the confidence and skills needed for high-risk assignments. The focus on legal compliance and ethical decision-making sets this course apart."
+              </p>
+              <div className="text-xs text-primary font-medium">Tactical Firearms Programme</div>
+            </div>
+
+            {/* Testimonial 3: Surveillance */}
+            <div className="bg-white border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
+              <div className="flex items-start gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <svg className="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-primary">Marcus T.</h4>
+                  <p className="text-xs text-muted-foreground">Intelligence Analyst</p>
+                </div>
+              </div>
+              <div className="mb-4">
+                <div className="flex gap-1 mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                    </svg>
+                  ))}
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground italic mb-4">
+                "The Surveillance & Intelligence programme taught me to think like a professional operator. The counter-surveillance techniques and threat assessment skills are directly applicable to my current role in corporate security."
+              </p>
+              <div className="text-xs text-primary font-medium">Surveillance & Intelligence Programme</div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </section>
