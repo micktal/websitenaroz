@@ -61,7 +61,7 @@ export default function Index() {
           <aside className="relative">
             <div className="rounded-2xl overflow-hidden border border-border p-6 bg-white shadow-sm">
               <div className="aspect-[4/3] w-full rounded-lg overflow-hidden relative">
-                <img src="https://cdn.builder.io/api/v1/image/assets%2Fd93d9a0ec7824aa1ac4d890a1f90a2ec%2F3fc26777b70e4140b74bc2348f6f53a2?format=webp&width=800&height=1200" alt="Hero" className="w-full h-full object-cover" />
+                <img src="https://images.pexels.com/photos/35557506/pexels-photo-35557506.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Professional Close Protection Agents" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                 <div className="absolute left-6 bottom-6">
                   <div className="px-3 py-2 rounded bg-white/95 backdrop-blur-sm text-sm text-primary">More than training — an operational path</div>
