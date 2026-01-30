@@ -1,89 +1,148 @@
 import SectionHeader from "@/components/SectionHeader";
-import Illustration from "@/components/Illustration";
-import Separator from "@/components/Separator";
 import Card from "@/components/Card";
 import LinkWrapper from "@/components/LinkWrapper";
 
 export default function About() {
   return (
-    <div className="max-w-4xl">
-      <SectionHeader title="About Us" subtitle="Professional Preparation for Complex Environments" />
-
-      <div className="grid gap-8 lg:grid-cols-3">
-        <div className="lg:col-span-2">
-          <Card>
-            <p className="lead">Naroz Shield Institute is an international training organisation dedicated to the preparation of professionals operating in sensitive, complex and high-risk environments.</p>
-
-            <Separator />
-
-            <h3 className="text-xl font-semibold mt-2 section-header"><span className="marker" aria-hidden />Our Philosophy</h3>
-            <p>At Naroz Shield Institute, we believe that security is built long before an incident occurs. True professional protection relies on anticipation rather than reaction, preparation rather than improvisation, discipline rather than bravado, and intelligence rather than force.</p>
-
-            <Separator />
-
-            <h3 className="text-lg font-semibold mt-4 section-header"><span className="marker" aria-hidden />A Professional, Non-Sensational Approach</h3>
-            <p>We deliberately reject sensationalism and unrealistic portrayals of security work. Our training philosophy is based on professional realism, legal and ethical responsibility, operational discipline and respect for international standards.</p>
-
-            <Separator />
-
-            <h3 className="text-lg font-semibold mt-4 section-header"><span className="marker" aria-hidden />Our Areas of Expertise</h3>
-            <ul className="list-disc pl-5 text-muted-foreground space-y-1">
-              <li>Close Protection and Personal Security</li>
-              <li>Diplomatic and Executive Protection</li>
-              <li>Surveillance and Intelligence Awareness</li>
-              <li>Protective Advance Work and Planning</li>
-              <li>Tactical Driving</li>
-              <li>Counter-Terrorism Awareness</li>
-              <li>Medical Support for Protection Teams</li>
-              <li>Team Leadership and Operations Management</li>
-            </ul>
-
-            <Separator />
-
-            <h3 className="text-lg font-semibold mt-4 section-header"><span className="marker" aria-hidden />Our Instructors</h3>
-            <p>Our instructors come from professional backgrounds in close protection and high-risk security operations. They are selected not only for their experience, but for their ability to transmit knowledge clearly, teach sound decision-making, maintain professional standards and respect confidentiality and discretion.</p>
-
-            <Separator />
-
-            <h3 className="text-lg font-semibold mt-4 section-header"><span className="marker" aria-hidden />Standards, Certification &amp; Credibility</h3>
-            <p>Naroz Shield Institute aligns its programmes with recognised regulatory and awarding frameworks, including qualifications awarded by Highfield Qualifications. This ensures our training meets regulated standards, is externally quality-assured and provides professional credibility to learners.</p>
-
-            <Separator />
-
-            <h3 className="text-lg font-semibold mt-4 section-header"><span className="marker" aria-hidden />Who We Train</h3>
-            <p>Our programmes are designed for professionals who understand the responsibilities of security work, including Close Protection Operatives, team leaders, diplomatic and corporate personnel, NGO and media professionals operating abroad. Our training is selective and intended for those committed to professional development.</p>
-
-            <Separator />
-
-            <h3 className="text-lg font-semibold mt-4 section-header"><span className="marker" aria-hidden />Our Commitment</h3>
-            <ul className="list-disc pl-5 text-muted-foreground space-y-1">
-              <li>Ethical and lawful training</li>
-              <li>Professional integrity</li>
-              <li>Continuous improvement</li>
-              <li>Respect for human life and responsibility</li>
-            </ul>
-
-            <p className="mt-4">Training does not end with certification. Our objective is to contribute to the development of responsible professionals, capable of adapting, thinking critically and operating with judgement in uncertain environments.</p>
-
-            <div className="mt-6">
-              <LinkWrapper to="/contact" className="inline-flex items-center px-4 py-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">Contact Us</LinkWrapper>
-            </div>
-          </Card>
-        </div>
-
-        <aside>
-          <Card className="p-6">
-            <div className="w-40 mx-auto">
-              <Illustration name="shield" className="w-full h-auto" />
-            </div>
-            <div className="mt-4 text-center">
-              <div className="text-sm">Professional Standards</div>
-              <div className="text-xs text-muted-foreground mt-1">Accredited, quality assured training aligned to international frameworks.</div>
-            </div>
-          </Card>
-        </aside>
+    <div className="max-w-6xl mx-auto">
+      {/* Hero Section */}
+      <div className="mb-16">
+        <SectionHeader title="About Us" subtitle="Professional Preparation for Complex Environments" />
+        <p className="lead mt-6 text-center mx-auto max-w-3xl">
+          Naroz Shield Institute is an international training organisation dedicated to the preparation of professionals operating in sensitive, complex and high-risk environments.
+        </p>
       </div>
 
+      {/* Philosophy Section */}
+      <div className="mb-12">
+        <Card className="p-8">
+          <div className="flex items-start gap-4">
+            <div className="w-1 h-16 bg-primary rounded-full flex-shrink-0" />
+            <div>
+              <h2 className="text-2xl mb-4 text-primary">Our Philosophy</h2>
+              <p className="text-lg leading-relaxed">
+                At Naroz Shield Institute, we believe that security is built long before an incident occurs. True professional protection relies on <strong className="text-primary font-semibold">anticipation</strong> rather than reaction, <strong className="text-primary font-semibold">preparation</strong> rather than improvisation, <strong className="text-primary font-semibold">discipline</strong> rather than bravado, and <strong className="text-primary font-semibold">intelligence</strong> rather than force.
+              </p>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      {/* Two Column Grid: Approach + Expertise */}
+      <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <Card className="p-6 bg-gray-50">
+          <h3 className="text-xl mb-3 text-primary">A Professional, Non-Sensational Approach</h3>
+          <p className="text-muted-foreground">
+            We deliberately reject sensationalism and unrealistic portrayals of security work. Our training philosophy is based on professional realism, legal and ethical responsibility, operational discipline and respect for international standards.
+          </p>
+        </Card>
+
+        <Card className="p-6 bg-white">
+          <h3 className="text-xl mb-3 text-primary">Our Instructors</h3>
+          <p className="text-muted-foreground">
+            Our instructors come from professional backgrounds in close protection and high-risk security operations. They are selected for their experience, ability to transmit knowledge clearly, teach sound decision-making, and maintain professional standards.
+          </p>
+        </Card>
+      </div>
+
+      {/* Areas of Expertise */}
+      <div className="mb-12">
+        <h2 className="text-2xl mb-6 text-primary text-center">Our Areas of Expertise</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            "Close Protection and Personal Security",
+            "Diplomatic and Executive Protection",
+            "Surveillance and Intelligence Awareness",
+            "Protective Advance Work and Planning",
+            "Tactical Driving",
+            "Counter-Terrorism Awareness",
+            "Medical Support for Protection Teams",
+            "Team Leadership and Operations Management"
+          ].map((item, idx) => (
+            <Card key={idx} className="p-4 bg-white hover:shadow-md transition-shadow">
+              <div className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0" />
+                <p className="text-sm text-foreground">{item}</p>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      {/* Standards & Certification */}
+      <div className="mb-12">
+        <Card className="p-8 bg-primary text-primary-foreground">
+          <h2 className="text-2xl mb-4">Standards, Certification &amp; Credibility</h2>
+          <p className="text-lg opacity-95">
+            Naroz Shield Institute aligns its programmes with recognised regulatory and awarding frameworks, including qualifications awarded by <strong>Highfield Qualifications</strong>. This ensures our training meets regulated standards, is externally quality-assured and provides professional credibility to learners.
+          </p>
+        </Card>
+      </div>
+
+      {/* Who We Train + Commitment */}
+      <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <Card className="p-6">
+          <h3 className="text-xl mb-3 text-primary">Who We Train</h3>
+          <p className="text-muted-foreground mb-4">
+            Our programmes are designed for professionals who understand the responsibilities of security work:
+          </p>
+          <ul className="space-y-2 text-sm">
+            <li className="flex items-start gap-2">
+              <span className="text-primary">•</span>
+              <span>Close Protection Operatives</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary">•</span>
+              <span>Team leaders and supervisors</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary">•</span>
+              <span>Diplomatic and corporate personnel</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary">•</span>
+              <span>NGO and media professionals operating abroad</span>
+            </li>
+          </ul>
+        </Card>
+
+        <Card className="p-6">
+          <h3 className="text-xl mb-3 text-primary">Our Commitment</h3>
+          <ul className="space-y-3 text-sm">
+            <li className="flex items-start gap-2">
+              <span className="text-primary">✓</span>
+              <span className="font-medium">Ethical and lawful training</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary">✓</span>
+              <span className="font-medium">Professional integrity</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary">✓</span>
+              <span className="font-medium">Continuous improvement</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-primary">✓</span>
+              <span className="font-medium">Respect for human life and responsibility</span>
+            </li>
+          </ul>
+        </Card>
+      </div>
+
+      {/* Closing Statement + CTA */}
+      <div className="text-center mb-12">
+        <Card className="p-8 bg-gray-50">
+          <p className="text-lg text-foreground max-w-3xl mx-auto mb-6">
+            Training does not end with certification. Our objective is to contribute to the development of responsible professionals, capable of adapting, thinking critically and operating with judgement in uncertain environments.
+          </p>
+          <LinkWrapper 
+            to="/contact" 
+            className="inline-flex items-center px-6 py-3 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-lg"
+          >
+            Get in Touch
+          </LinkWrapper>
+        </Card>
+      </div>
     </div>
   );
 }
