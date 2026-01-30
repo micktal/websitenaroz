@@ -15,8 +15,8 @@ export default function Index() {
         />
       </div>
 
-      <div className="container py-20 relative z-10">
-        <div className="grid gap-12 lg:grid-cols-2 items-center">
+      <div className="container py-8 md:py-12 lg:py-20 relative z-10">
+        <div className="grid gap-8 md:gap-12 lg:grid-cols-2 items-center">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-4">
               <img
