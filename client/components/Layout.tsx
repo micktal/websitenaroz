@@ -456,9 +456,7 @@ export default function Layout() {
                   </div>
                 </div>
               </div>
-              <p className="text-xs text-muted-foreground mt-2">
-                UK Regulated
-              </p>
+              <p className="text-xs text-muted-foreground mt-2">UK Regulated</p>
             </div>
 
             <div className="text-center w-full sm:w-auto">
