@@ -11,144 +11,75 @@
    * Keep HSL format to remain compatible with the theme setup.
   */
   :root {
-    /* Brand: Navy blue / White */
-    --background: 217 16% 6%; /* deep navy background for a darker aesthetic */
-    --foreground: 0 0% 98%; /* near white text */
+    /* Clean white/gray theme with navy and black text */
+    --background: 0 0% 100%; /* white background */
+    --foreground: 217 91% 20%; /* navy blue text */
 
-    --card: 217 28% 16%;
-    --card-foreground: 0 0% 100%;
+    --card: 0 0% 98%;
+    --card-foreground: 217 91% 20%;
 
-    --popover: 217 28% 16%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 91% 20%;
 
-    /* Primary = Naroz Shield navy */
-    --primary: 217 28% 16%;
+    /* Primary = Navy blue */
+    --primary: 217 91% 20%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 217 16% 14%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 217 16% 14%;
-    --muted-foreground: 215 20% 75%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
 
-    /* Accent: neon-cyan/green soft for highlights */
-    --accent: 152 80% 60%; /* h s l */
-    --accent-foreground: 217 16% 6%;
+    /* Accent: navy blue for highlights */
+    --accent: 217 91% 20%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217 16% 14%;
-    --input: 217 16% 14%;
-    --ring: 152 80% 60%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 217 91% 20%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 217 16% 6%;
+    --sidebar-background: 0 0% 98%;
 
-    --sidebar-foreground: 0 0% 98%;
+    --sidebar-foreground: 217 91% 20%;
 
-    --sidebar-primary: 217 28% 16%;
+    --sidebar-primary: 217 91% 20%;
 
     --sidebar-primary-foreground: 0 0% 100%;
 
-    --sidebar-accent: 217 16% 14%;
+    --sidebar-accent: 0 0% 95%;
 
-    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-accent-foreground: 217 91% 20%;
 
-    --sidebar-border: 217 16% 14%;
+    --sidebar-border: 0 0% 90%;
 
-    --sidebar-ring: 152 80% 60%;
+    --sidebar-ring: 217 91% 20%;
 
     /* Visual helpers */
-    --navy-deep: 217 16% 6%;
-    --accent-muted: 152 80% 12%;
-    --glass: rgba(255,255,255,0.03);
-
-    /* Military theme helpers */
-    --military-olive: 102 18% 22%; /* deep olive */
-    --military-tan: 34 28% 60%; /* tan accent */
-    --military-accent: 100 30% 38%; /* brighter olive for badges */
-    --military-rust: 12 60% 38%;
+    --navy-deep: 217 91% 20%;
+    --accent-muted: 217 91% 95%;
+    --glass: rgba(0,0,0,0.02);
   }
 
-  /* Noise overlay, camo and visor utilities */
+  /* Subtle texture overlay */
   .bg-noise {
-    /* subtle grain using tiny radial-gradient tiles */
-    background-image: radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
+    /* very subtle grain */
+    background-image: radial-gradient(rgba(0,0,0,0.01) 1px, transparent 1px);
     background-size: 4px 4px;
-    opacity: 0.14;
+    opacity: 0.08;
     mix-blend-mode: overlay;
     pointer-events: none;
   }
 
-  .camo-overlay {
-    /* subtle camo using layered linear-gradients */
-    background-image: linear-gradient(135deg, rgba(20,34,22,0.06) 10%, rgba(92,82,47,0.03) 30%, rgba(40,46,34,0.04) 60%), radial-gradient(circle at 10% 20%, rgba(255,255,255,0.02), transparent 12%);
-    opacity: 0.12;
-    pointer-events: none;
-  }
-
-  .military-visor {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    height: 48px;
-    background: linear-gradient(180deg, rgba(0,0,0,0.18), transparent 60%);
-    pointer-events: none;
-    mix-blend-mode: multiply;
-  }
-
-  .scanlines {
-    background-image: repeating-linear-gradient(
-      to bottom,
-      rgba(255,255,255,0.02) 0px,
-      rgba(255,255,255,0.02) 1px,
-      transparent 1px,
-      transparent 3px
-    );
-    opacity: 0.06;
-    pointer-events: none;
-  }
-
   .dark {
-    /* In dark mode, invert to navy background */
-    --background: 217 28% 12%; /* navy */
-    --foreground: 0 0% 100%;
-
-    --card: 217 28% 16%;
-    --card-foreground: 0 0% 100%;
-
-    --popover: 217 28% 16%;
-    --popover-foreground: 0 0% 100%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 220 12% 10%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 217 28% 12%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Keep light theme consistent - no dark mode */
+    --background: 0 0% 100%;
+    --foreground: 217 91% 20%;
   }
 }
 
@@ -170,7 +101,7 @@
   .lead {
     font-size: 1.125rem; /* 18px */
     line-height: 1.7;
-    color: rgba(248,250,252,0.85);
+    color: hsl(217 91% 20%);
     max-width: 72ch;
   }
 
@@ -206,25 +137,24 @@
 
   .section-header .marker {
     width: 44px;
-    height: 6px;
-    border-radius: 4px;
-    background: linear-gradient(90deg, hsl(var(--military-accent)), hsl(var(--military-olive)));
-    box-shadow: 0 8px 30px rgba(0,0,0,0.45);
-    border: 1px solid rgba(0,0,0,0.2);
+    height: 4px;
+    border-radius: 2px;
+    background: hsl(var(--primary));
+    box-shadow: none;
   }
 
   /* subdued secondary text */
-  .muted-foreground { color: rgba(248,250,252,0.65); }
+  .muted-foreground { color: hsl(var(--muted-foreground)); }
 
   /* Card helper class to apply consistent elevated style */
   .card-elevated {
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-    border: 1px solid rgba(255,255,255,0.04);
-    border-radius: 12px;
+    background: white;
+    border: 1px solid hsl(var(--border));
+    border-radius: 8px;
     padding: 1rem;
     transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms;
   }
-  .card-elevated:hover { transform: translateY(-6px); box-shadow: 0 18px 60px rgba(2,6,23,0.6); }
+  .card-elevated:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
 
   a { transition: color 160ms ease, transform 160ms ease; }
   a:hover { transform: translateY(-1px); }
